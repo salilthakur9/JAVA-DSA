@@ -18,3 +18,17 @@
         System.out.println(a);
     }
 }*/
+
+
+/*import java.util.*;
+public class JavaBasics{
+public static void main(String [] args){
+    Scanner sc = new Scanner(System.in);
+    String input = sc.nextLine();
+    int age = sc.nextInt();
+    float salary = sc.nextFloat();
+    System.out.println(input);
+    System.out.println(age);
+    System.out.println(salary);
+}
+}*/
