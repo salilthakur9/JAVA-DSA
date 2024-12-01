@@ -32,3 +32,47 @@ public static void main(String [] args){
     System.out.println(salary);
 }
 }*/
+
+
+/*import java.util.*;
+public class JavaBasics{
+    public static void main(String []args){
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b= sc.nextInt();
+        int sum= a+b;
+        System.out.println(sum);
+    }
+}*/
+
+
+/*import java.util.*;
+public class JavaBasics{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+
+        float a = sc.nextFloat();
+        float b = sc.nextFloat();
+
+        float product = a/b;
+        System.out.println(product);
+    }
+}*/
+
+
+/*public class JavaBasics{
+    public static void main(String args[]){
+        float a= 16.09f;
+        int b= (int) a;
+        System.out.println(b);
+    }
+}*/
+
+
+/*public class JavaBasics{
+    public static void main(String args[]){
+        char ch='s';
+        int num=ch;
+        System.out.println(num);
+    }
+}*/
