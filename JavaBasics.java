@@ -212,3 +212,23 @@ public class JavaBasics{
 }*/
 
 
+/*import java.util.*;
+public class JavaBasics{
+    public static void main(String args []){
+        Scanner sc= new Scanner(System.in);
+
+        int number = sc.nextInt();
+
+        boolean isP = true;
+        for(int i=2;i<=number-1;i++){
+            if(number%i==0){
+                isP=false;
+            }
+        }
+        if(isP==true){
+            System.out.println(number+" is prime!");
+        }else{
+            System.out.println(number+" is not prime!");
+        }
+    }
+}*/
