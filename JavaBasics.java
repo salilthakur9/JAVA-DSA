@@ -183,3 +183,32 @@ public class JavaBasics{
         System.out.println(sum);
     }
 }*/
+
+
+/*import java.util.Scanner;
+public class JavaBasics{
+    public static void main(String args[]){
+        Scanner sc= new Scanner(System.in);
+        char a=sc.next().charAt(0);
+        char b=sc.next().charAt(0);
+        int sum=a+b;
+        System.out.println(sum);
+        sc.close();
+    }
+}*/
+
+
+/*import java.util.Scanner;
+public class JavaBasics{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        int n= sc.nextInt();
+        int counter=1;
+        do{
+            System.out.println("Salil");
+            counter++;
+        }while(counter<=n);
+    }
+}*/
+
+
