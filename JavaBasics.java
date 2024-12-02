@@ -5,7 +5,6 @@
     }
 }   */
 
-
 /*public class JavaBasics{
     public static void main(String[]args){
         int a= 50;
@@ -18,7 +17,6 @@
         System.out.println(a);
     }
 }*/
-
 
 /*import java.util.*;
 public class JavaBasics{
@@ -33,7 +31,6 @@ public static void main(String [] args){
 }
 }*/
 
-
 /*import java.util.*;
 public class JavaBasics{
     public static void main(String []args){
@@ -44,7 +41,6 @@ public class JavaBasics{
         System.out.println(sum);
     }
 }*/
-
 
 /*import java.util.*;
 public class JavaBasics{
@@ -59,7 +55,6 @@ public class JavaBasics{
     }
 }*/
 
-
 /*public class JavaBasics{
     public static void main(String args[]){
         float a= 16.09f;
@@ -67,7 +62,6 @@ public class JavaBasics{
         System.out.println(b);
     }
 }*/
-
 
 /*public class JavaBasics{
     public static void main(String args[]){
@@ -77,11 +71,45 @@ public class JavaBasics{
     }
 }*/
 
-
 /*public class JavaBasics{
     public static void main(String args[]){
         char a='a';
         char b='b';
         System.out.println(a-b);  
+    }
+}*/
+
+/*import java.util.Scanner;
+public class JavaBasics{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        int age = sc.nextInt();
+        if(age>=18){
+            System.out.println("you are eligible cause your age is "+age);
+        }else{
+            System.out.println("You are not eligible cause your age is "+age);
+        }
+    }
+}*/
+
+/*import java.util.Scanner;
+
+public class JavaBasics {
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        int num = sc.nextInt();
+        if (num == 0) {
+            System.out.println("ZERO");
+        } else {
+            if (num < 0) {
+                System.out.println("NEGATIVE");
+            } else {
+                if (num % 2 == 0) {
+                    System.out.println("EVEN");
+                } else {
+                    System.out.println("ODD");
+                }
+            }
+        }
     }
 }*/
