@@ -144,3 +144,42 @@ public class JavaBasics{
         System.out.println(type);
     }
 }*/
+
+
+/*public class JavaBasics{
+    public static void main(String args[]){
+        int number=10;
+        switch(number){
+            case 10:System.out.println("10");break;
+            case 20:System.out.println("20");break;
+            default:System.out.println("def");
+        }
+    }
+}*/
+
+
+/*public class JavaBasics{
+    public static void main(String args[]){
+        int counter=1;
+        while(counter<=10){
+            System.out.println(counter+". hi");
+            counter++;
+        }
+    }
+}*/
+
+
+/*import java.util.*;
+public class JavaBasics{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        int n=sc.nextInt();
+        int sum=0;
+        int num=0;
+        while(num!=n){
+            num++;
+            sum+=num;
+        }
+        System.out.println(sum);
+    }
+}*/
