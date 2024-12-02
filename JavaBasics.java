@@ -132,3 +132,15 @@ public class JavaBasics{
         }
     }
 }*/
+
+
+/*import java.util.Scanner;
+public class JavaBasics{
+    public static void main(String args[]){
+        Scanner sc= new Scanner(System.in);
+        int age= sc.nextInt();
+
+        String type =(age>=18)? "yes eligible":"no not eligible";
+        System.out.println(type);
+    }
+}*/
