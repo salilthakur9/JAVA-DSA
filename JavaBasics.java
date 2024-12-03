@@ -220,7 +220,7 @@ public class JavaBasics{
         int number = sc.nextInt();
 
         boolean isP = true;
-        for(int i=2;i<=number-1;i++){
+        for(int i=2;i<=Math.sqrt(number);i++){
             if(number%i==0){
                 isP=false;
             }
@@ -230,5 +230,45 @@ public class JavaBasics{
         }else{
             System.out.println(number+" is not prime!");
         }
+    }
+}*/
+
+
+/*import java.util.Scanner;
+public class JavaBasics{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        int n= sc.nextInt();
+        for(int i=0;i<=n;i++){
+            for(int j=1;j<=i;j++){
+                System.out.print("* ");
+            }System.out.println();
+        }
+    }
+}*/
+
+
+/*import java.util.Scanner;
+public class JavaBasics{
+    public static void main(String args []){
+        Scanner sc = new Scanner(System.in);
+        int n= sc.nextInt();
+
+        for(int i=0;i<=n;i++){
+            for(int j=0;j<=n-i-1;j++){
+                System.out.print("* ");
+            }System.out.println();
+        }
+    }
+}*/
+
+
+/*import java.util.Scanner;
+public class JavaBasics{
+    public static void Print_name(){
+        System.out.println("Salil Thakur");
+    }
+    public static void main(String args[]){
+        Print_name();
     }
 }*/
