@@ -272,3 +272,41 @@ public class JavaBasics{
         Print_name();
     }
 }*/
+
+
+/*import java.util.Scanner;
+public class JavaBasics{
+    public static int calculation(int a, int b){
+        int sum=a+b;
+        return sum;
+    }
+    public static void main(String args []){
+        Scanner sc = new Scanner(System.in);
+        int num1=sc.nextInt();
+        int num2=sc.nextInt();
+    
+        System.out.println("sum of "+num1+" and "+num2+" is "+ calculation(num1,num2));
+        sc.close();
+    }
+}*/
+
+
+/*import java.util.Scanner;
+public class JavaBasics{
+    public static int sum(int a,int b,int c){
+        return a+b+c;
+    }
+    public static int sum(int a, int b){
+        return a+b;
+    }
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        int num1= sc.nextInt();
+        int num2= sc.nextInt();
+        int num3= sc.nextInt();
+
+        System.out.println("sum of "+num1+" and "+num2+" is "+sum(num1,num2));
+        System.out.println("sum of "+num1+", "+num2+" and "+num3+" is "+sum(num1,num2,num3));
+
+        sc.close();
+    }*/
