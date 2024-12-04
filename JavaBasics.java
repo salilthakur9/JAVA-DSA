@@ -417,3 +417,40 @@ public class JavaBasics{
         sc.close();
     }
 }*/
+
+
+/*import java.util.Scanner;
+public class JavaBasics{
+    public static void swapArray(int arr[]){
+        int first=0,last=(arr.length)-1;
+        while(first<last){
+            int temp=arr[first];
+            arr[first]=arr[last];
+            arr[last]=temp;
+
+            first++;
+            last--;
+        }
+    }
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter the number of elements u want to fill: ");
+        int n=sc.nextInt();
+        int arr[]=new int[n];
+        System.out.println("Enter "+n+" elements:");
+
+        for(int i=0;i<n;i++){
+            arr[i]=sc.nextInt();
+        }
+
+        swapArray(arr);
+        System.out.println("After reversing the given array: ");
+        for(int i=0;i<n;i++){
+            System.out.print(arr[i]+" ");
+        }
+        sc.close();
+
+    }
+}*/
+
