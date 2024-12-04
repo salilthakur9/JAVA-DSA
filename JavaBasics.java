@@ -328,3 +328,26 @@ public class JavaBasics{
 
     }
 }*/
+
+
+/*import java.util.Scanner;
+public class JavaBasics{
+    public static void updation(int arr[]){
+        for(int i=0;i<arr.length;i++){
+            arr[i]*=arr[i];
+        }
+    }
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        int n= sc.nextInt();
+        int arr[]=new int[50];
+        for(int i=0;i<n;i++){
+            arr[i]= sc.nextInt();
+        }
+        updation(arr);
+        System.out.println("square of each element: ");
+        for(int i=0;i<n;i++){
+            System.out.print(arr[i]+" ");
+        }
+    }
+}*/
