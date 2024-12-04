@@ -454,3 +454,36 @@ public class JavaBasics{
     }
 }*/
 
+
+/*import java.util.Scanner;
+public class JavaBasics{
+    public static void SubArray(int arr[]){
+        int total=0;
+        for(int i=0;i<arr.length;i++){
+            int start=i;
+            for(int j=i;j<arr.length;j++){
+                int end=j;
+                for(int k=start;k<=end;k++){
+                    System.out.print(arr[k]+" ");
+                }
+                total++;
+                System.out.println();
+            }
+            System.out.println();
+        }
+        System.out.println("Total numbers of the subarrys are: "+total);
+    }
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the number of elements: ");
+        int n=sc.nextInt();
+        int arr[]=new int[n];
+
+        for(int i=0;i<n;i++){
+            arr[i]=sc.nextInt();
+        }
+
+        SubArray(arr);
+        sc.close();
+    }
+}*/
