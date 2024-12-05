@@ -27,3 +27,18 @@ public class Recursion{
         recursion(1,n);
     }
 }*/
+
+
+/*import java.util.*;
+public class Recursion{
+    public static void recursion(int n){
+        if(n==0)return;
+        System.out.println(n);
+        recursion(n-1);
+    }
+    public static void main(String args[]){
+        Scanner sc= new Scanner(System.in);
+        int n=sc.nextInt();
+        recursion(n);
+    }
+}*/
