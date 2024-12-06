@@ -487,3 +487,25 @@ public class JavaBasics{
         sc.close();
     }
 }*/
+
+
+/*import java.util.Scanner;
+public class JavaBasics{
+    public static void main(String args[]){
+        Scanner sc= new Scanner(System.in);
+        System.out.println("enter number 1: ");
+        int num1=sc.nextInt();
+        System.out.println("enter number 2: ");
+        int num2=sc.nextInt();
+
+        if(num1%2==0 && num2%2==0){
+            System.out.println("both "+num1+" and "+num2+" is even!");
+        }else if(num1%2==0 && num2%2!=0){
+            System.out.println(num1+" is even but "+num2+" is odd!");
+        }else if(num1%2!=0 && num2%2==0){
+            System.out.println(num1+" is odd but "+num2+" is even!");
+        }else{
+            System.out.println("both "+num1+" and "+num2+" are odd!");
+        }
+    }
+}*/

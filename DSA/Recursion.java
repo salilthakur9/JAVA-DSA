@@ -14,7 +14,6 @@ public class Recursion{
     }
 }*/
 
-
 //2
 /*import java.util.Scanner;
 public class Recursion{
@@ -30,7 +29,6 @@ public class Recursion{
     }
 }*/
 
-
 //3
 /*import java.util.*;
 public class Recursion{
@@ -45,7 +43,6 @@ public class Recursion{
         recursion(n);
     }
 }*/
-
 
 //4
 /*import java.util.Scanner;
@@ -63,7 +60,6 @@ public class Recursion{
         recursion(n, 0);
     }
 }*/
-
 
 //5
 /*import java.util.*;
