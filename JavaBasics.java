@@ -566,3 +566,20 @@ public class JavaBasics {
         scanner.close();
     }
 }*/
+
+
+
+/*public class JavaBasics{
+    public static void main(String[] args) {
+        try {
+            int number = 10 / 0; // This will throw ArithmeticException
+        } catch (ArithmeticException e) {
+            System.out.println("Caught an exception: " + e.getMessage());
+        } finally {
+            System.out.println("This block always executes.");
+        }
+    }
+}*/
+
+
+
