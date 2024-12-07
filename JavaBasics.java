@@ -5,6 +5,8 @@
     }
 }   */
 
+
+
 /*public class JavaBasics{
     public static void main(String[]args){
         int a= 50;
@@ -17,6 +19,8 @@
         System.out.println(a);
     }
 }*/
+
+
 
 /*import java.util.*;
 public class JavaBasics{
@@ -31,6 +35,8 @@ public static void main(String [] args){
 }
 }*/
 
+
+
 /*import java.util.*;
 public class JavaBasics{
     public static void main(String []args){
@@ -41,6 +47,8 @@ public class JavaBasics{
         System.out.println(sum);
     }
 }*/
+
+
 
 /*import java.util.*;
 public class JavaBasics{
@@ -55,6 +63,8 @@ public class JavaBasics{
     }
 }*/
 
+
+
 /*public class JavaBasics{
     public static void main(String args[]){
         float a= 16.09f;
@@ -62,6 +72,8 @@ public class JavaBasics{
         System.out.println(b);
     }
 }*/
+
+
 
 /*public class JavaBasics{
     public static void main(String args[]){
@@ -71,6 +83,8 @@ public class JavaBasics{
     }
 }*/
 
+
+
 /*public class JavaBasics{
     public static void main(String args[]){
         char a='a';
@@ -78,6 +92,8 @@ public class JavaBasics{
         System.out.println(a-b);  
     }
 }*/
+
+
 
 /*import java.util.Scanner;
 public class JavaBasics{
@@ -91,6 +107,8 @@ public class JavaBasics{
         }
     }
 }*/
+
+
 
 /*import java.util.Scanner;
 
@@ -115,6 +133,8 @@ public class JavaBasics {
 }*/
 
 
+
+
 /*import java.util.Scanner;
 public class JavaBasics{
     public static void main(String args[]){
@@ -132,6 +152,7 @@ public class JavaBasics{
         }
     }
 }*/
+
 
 
 /*import java.util.Scanner;
@@ -198,6 +219,7 @@ public class JavaBasics{
 }*/
 
 
+
 /*import java.util.Scanner;
 public class JavaBasics{
     public static void main(String args[]){
@@ -210,6 +232,7 @@ public class JavaBasics{
         }while(counter<=n);
     }
 }*/
+
 
 
 /*import java.util.*;
@@ -234,6 +257,7 @@ public class JavaBasics{
 }*/
 
 
+
 /*import java.util.Scanner;
 public class JavaBasics{
     public static void main(String args[]){
@@ -246,6 +270,7 @@ public class JavaBasics{
         }
     }
 }*/
+
 
 
 /*import java.util.Scanner;
@@ -263,6 +288,7 @@ public class JavaBasics{
 }*/
 
 
+
 /*import java.util.Scanner;
 public class JavaBasics{
     public static void Print_name(){
@@ -272,6 +298,7 @@ public class JavaBasics{
         Print_name();
     }
 }*/
+
 
 
 /*import java.util.Scanner;
@@ -289,6 +316,7 @@ public class JavaBasics{
         sc.close();
     }
 }*/
+
 
 
 /*import java.util.Scanner;
@@ -312,6 +340,7 @@ public class JavaBasics{
     }*/
 
 
+
 /*import java.util.Scanner;
 public class JavaBasics{
     public static void main(String args[]){
@@ -328,6 +357,7 @@ public class JavaBasics{
 
     }
 }*/
+
 
 
 /*import java.util.Scanner;
@@ -351,6 +381,7 @@ public class JavaBasics{
         }
     }
 }*/
+
 
 
 
@@ -383,6 +414,7 @@ public class JavaBasics{
 }*/
 
 
+
 /*import java.util.Scanner;
 public class JavaBasics{
     public static void main(String args[]){
@@ -401,6 +433,7 @@ public class JavaBasics{
 }*/
 
 
+
 /*import java.util.Scanner;
 public class JavaBasics{
     public static void main(String args[]){
@@ -417,6 +450,7 @@ public class JavaBasics{
         sc.close();
     }
 }*/
+
 
 
 /*import java.util.Scanner;
@@ -455,6 +489,7 @@ public class JavaBasics{
 }*/
 
 
+
 /*import java.util.Scanner;
 public class JavaBasics{
     public static void SubArray(int arr[]){
@@ -489,6 +524,7 @@ public class JavaBasics{
 }*/
 
 
+
 /*import java.util.Scanner;
 public class JavaBasics{
     public static void main(String args[]){
@@ -507,5 +543,26 @@ public class JavaBasics{
         }else{
             System.out.println("both "+num1+" and "+num2+" are odd!");
         }
+    }
+}*/
+
+
+/*import java.util.Scanner;
+
+public class JavaBasics {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int number = scanner.nextInt();
+        int reversedNumber = 0;
+
+        while (number > 0) {
+            int remainder = number % 10;
+            reversedNumber = (reversedNumber * 10) + remainder;
+            number = number / 10;
+        }
+
+        System.out.println("Reversed Number: " + reversedNumber);
+        scanner.close();
     }
 }*/
