@@ -583,3 +583,48 @@ public class JavaBasics {
 
 
 
+/*public class JavaBasics{
+    public static void main(String args[]){
+        int day=8;
+        switch(day){
+            case 1:System.out.println("MOnday");break;
+            case 2:System.out.println("tuesday");break;
+            case 3:System.out.println("wednesday");break;
+            case 4:System.out.println("thrusday");break;
+            case 5:System.out.println("friday");break;
+            case 6:System.out.println("saturday");break;
+            case 7:System.out.println("sunday");break;
+            default:System.out.println("invalid input");
+        }
+    }
+}*/
+
+
+
+/*public class JavaBasics{
+    public static void main(String args[]){
+        int day=1;
+        String dayName=switch(day){
+            case 1->"monday";
+            case 2->"tuesday";
+            case 3->"wednesday";
+            case 4->"thrusday";
+            case 5->"friday";
+            case 6->"saturday";
+            case 7->"sunday";
+            default->"invalid";
+        };
+        System.out.println(dayName);
+    }
+}*/
+
+
+/*public class JavaBasics{
+    public static void main(String args[]){
+        for(int i=0;i<=10;i++){
+            System.out.println("this is "+i+" iterations");
+        }
+    }
+}*/
+
+
