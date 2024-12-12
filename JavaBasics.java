@@ -628,3 +628,41 @@ public class JavaBasics {
 }*/
 
 
+/*import java.util.Scanner;
+public class JavaBasics{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        int num= sc.nextInt();
+        if(num==0){
+            System.out.println("Zero");
+        }else if(num<0){
+            System.out.println("negative");
+        }else{
+            System.out.println("positive");
+        }
+    }
+}*/
+
+
+/*import java.util.Scanner;
+public class JavaBasics {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int number = scanner.nextInt();
+
+        switch (Integer.signum(number)) {
+            case 1:
+                System.out.println("The number is positive.");
+                break;
+            case -1:
+                System.out.println("The number is negative.");
+                break;
+            case 0:
+                System.out.println("The number is zero.");
+                break;
+            default:
+                System.out.println("Unexpected value.");
+        }
+    }
+}*/
