@@ -666,3 +666,31 @@ public class JavaBasics {
         }
     }
 }*/
+
+
+
+/*public class JavaBasics{
+    public static void main(String args[]){
+        int[] number={1,2,3,4,5};
+        System.out.println("Using for-each loop: ");
+        for(int num:number){
+            System.out.println("Number: "+num);
+        }
+    }
+}*/
+
+
+
+/*public class JavaBasics{
+    public static void main(String args[]){
+        int[] number={1,10,100,1000,10000,100000};
+        int sum=0;
+        System.out.println("Using for-each-loop:");
+        for(int num:number){
+            sum+=num;
+        }System.out.println("Sum of the given array is: "+sum);
+    }
+}*/
+
+
+
