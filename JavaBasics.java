@@ -721,3 +721,44 @@ public class JavaBasics{
         }
     }
 }*/
+
+
+/*import java.util.Scanner;
+public class JavaBasics{
+    public static void main(String args[]){
+        Scanner sc= new Scanner(System.in);
+        System.out.println("Input the int value of marks obtained in five subjects: ");
+        int sub1=sc.nextInt();
+        int sub2=sc.nextInt();
+        int sub3=sc.nextInt();
+        int sub4=sc.nextInt();
+        int sub5=sc.nextInt();
+
+        int percentage=(sub1+sub2+sub3+sub4+sub5)/5;
+        System.out.print("Your percentage is: "+percentage);
+        System.out.println();
+
+        if(percentage>=80)System.out.println("A grade");
+        else if(70<=percentage && percentage>=79)System.out.println("B Grade");
+        else if(60<=percentage && percentage>=69)System.out.println("C Grade");
+        else if(50<=percentage && percentage>=59)System.out.println("D Grade");
+        else{System.out.println("F Grade");}
+    }
+}*/
+
+
+
+/*import java.util.Scanner;
+public class JavaBasics{
+    public static void main(String args[]){
+        Scanner sc= new Scanner(System.in);
+        System.out.print("Enter your income: ");
+        float income=sc.nextFloat();
+
+        if(income<=250000)System.out.println("No Tax");
+        else if(income>250000 && income<=500000){float tax=((income-250000)*5)/100;System.out.println("Tax to be paid: "+tax);}
+        else if(income>500000 && income<=1000000){float tax=((income-250000)*10)/100;System.out.println("Tax to be paid: "+tax);}
+        else if(income>1000000 && income<=1500000){float tax=((income-250000)*20)/100;System.out.println("Tax to be paid: "+tax);}
+        else{float tax=((income-250000)*30)/100;System.out.println("Tax to be paid: "+tax);}
+    }
+}*/
