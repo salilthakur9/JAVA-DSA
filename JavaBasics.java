@@ -754,11 +754,50 @@ public class JavaBasics{
         Scanner sc= new Scanner(System.in);
         System.out.print("Enter your income: ");
         float income=sc.nextFloat();
+        System.out.println();
 
-        if(income<=250000)System.out.println("No Tax");
-        else if(income>250000 && income<=500000){float tax=((income-250000)*5)/100;System.out.println("Tax to be paid: "+tax);}
-        else if(income>500000 && income<=1000000){float tax=((income-250000)*10)/100;System.out.println("Tax to be paid: "+tax);}
-        else if(income>1000000 && income<=1500000){float tax=((income-250000)*20)/100;System.out.println("Tax to be paid: "+tax);}
-        else{float tax=((income-250000)*30)/100;System.out.println("Tax to be paid: "+tax);}
+        float tax_income=income-250000;
+        System.out.print("Taxable Income: "+tax_income);
+        System.out.println();
+
+        if(tax_income<=250000)System.out.println("No Tax");
+        else if(tax_income>250000 && tax_income<=500000){float tax=(tax_income*5)/100;System.out.println("Tax to be paid: "+tax);}
+        else if(tax_income>500000 && tax_income<=1000000){float tax=(tax_income*10)/100;System.out.println("Tax to be paid: "+tax);}
+        else if(tax_income>1000000 && tax_income<=1500000){float tax=(tax_income*20)/100;System.out.println("Tax to be paid: "+tax);}
+        else{float tax=(tax_income*30)/100;System.out.println("Tax to be paid: "+tax);}
     }
 }*/
+
+
+
+/*import java.util.Scanner;
+public class JavaBasics{
+    public static void main(String args[]){
+        Scanner sc= new Scanner(System.in);
+        int arr[]=new int[10];
+
+        System.out.println("Enter the number of elements you want to enter:");
+        int n=sc.nextInt();
+
+        for(int i=0;i<n;i++){
+            arr[i]=sc.nextInt();
+        }
+
+        int sum=0;
+        for(int i=0;i<n;i++){
+            sum+=arr[i];
+        }
+        System.out.print("sum: "+sum);
+    }
+}*/
+
+
+
+/*
+import java.util.Scanner;
+public class JavaBasics{
+    public static void main(String args[]){
+        Scanner sc= new Scanner(System.in);
+    }
+}
+ */
