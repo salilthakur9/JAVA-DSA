@@ -793,11 +793,109 @@ public class JavaBasics{
 
 
 
-/*
-import java.util.Scanner;
+
+/*import java.util.Scanner;
 public class JavaBasics{
     public static void main(String args[]){
         Scanner sc= new Scanner(System.in);
+        float f=sc.nextFloat();
+        float ff=4.5f;
+        float fff=(float)4.0;
+
+        float ffff=f+ff+fff;
+        System.out.println(ffff);
     }
-}
- */
+}*/
+
+
+/*import java.util.*;
+public class JavaBasics{
+    public static void main(String args[]){
+        Scanner sc= new Scanner(System.in);
+        System.out.print("Enter Number 1: ");
+        float num1=sc.nextFloat();
+        System.out.print("Enter an Operator (+,-,*,/,%): ");
+        char c=sc.next().charAt(0);
+        System.out.print("Enter Number 2: ");
+        float num2=sc.nextFloat();
+
+        switch (c) {
+            case '+':System.out.println(num1+" + "+num2+" = "+(num1+num2));break;
+            case '-':System.out.println(num1+" - "+num2+" = "+(num1-num2));break;
+            case '*':System.out.println(num1+" * "+num2+" = "+(num1*num2));break;
+            case '/':System.out.println(num1+" / "+num2+" = "+(num1/num2));break;
+            case '%':System.out.println(num1+" % "+num2+" = "+(num1%num2));break;
+            default: break;
+        }
+    }
+}*/
+
+
+
+/*import java.util.Scanner;
+public class JavaBasics{
+    public static void main(String args[]){
+        Scanner sc= new Scanner(System.in);
+        System.out.print("Enter the number of month: ");
+        int month=sc.nextInt();
+
+        String season;
+        season= switch (month) {
+            case 11, 12, 1, 2 -> "Winter";
+            case 3, 4, 5, 6 -> "Summer";
+            case 7, 8, 9, 10 -> "Rainy";
+            default -> "Invalid input month";
+        };
+
+        System.out.println("Season: "+season);
+    }
+}*/
+
+
+/*class JavaBasics{
+    public static void main(String args[]){
+        int [][] arrays ={{1,2,3},
+                         {4,5,6},
+                         {7,8,9}};
+        System.out.println("2d array elements: ");
+        for(int i=0;i<arrays[i].length;i++){
+            for(int j=0;j<arrays[i].length;j++){
+                System.out.println(arrays[i][j]+"");
+            }
+            System.out.println();
+        }
+    }
+}*/
+
+
+
+/*public class JavaBasics {
+    public static void main(String[] args) {
+        int[][] matrix = { 
+            {1, 2, 3}, 
+            {4, 5, 6}, 
+            {7, 8, 9} 
+        };
+
+        int rows = matrix.length;       
+        int cols = matrix[0].length;     
+
+        System.out.println("Sum of each row:");
+        for (int i = 0; i < rows; i++) {
+            int rowSum = 0;
+            for (int j = 0; j < cols; j++) {
+                rowSum += matrix[i][j];
+            }
+            System.out.println("Row " + (i + 1) + ": " + rowSum);
+        }
+
+        System.out.println("\nSum of each column:");
+        for (int j = 0; j < cols; j++) {
+            int colSum = 0; 
+            for (int i = 0; i < rows; i++) {
+                colSum += matrix[i][j];
+            }
+            System.out.println("Column " + (j + 1) + ": " + colSum);
+        }
+    }
+}*/
