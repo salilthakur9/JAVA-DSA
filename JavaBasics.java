@@ -899,3 +899,182 @@ public class JavaBasics{
         }
     }
 }*/
+
+
+
+// Base class
+/*class Account {
+    private String accountNumber;
+    private double balance;
+
+    // Constructor
+    public Account(String accountNumber, double initialBalance) {
+        this.accountNumber = accountNumber;
+        this.balance = initialBalance;
+    }
+
+    // Getter for accountNumber
+    public String getAccountNumber() {
+        return accountNumber;
+    }
+
+    // Getter for balance
+    public double getBalance() {
+        return balance;
+    }
+
+    // Method to deposit money
+    public void deposit(double amount) {
+        if (amount > 0) {
+            balance += amount;
+            System.out.println("Deposited: " + amount);
+        } else {
+            System.out.println("Invalid deposit amount");
+        }
+    }
+
+    // Method to withdraw money
+    public void withdraw(double amount) {
+        if (amount > 0 && amount <= balance) {
+            balance -= amount;
+            System.out.println("Withdrew: " + amount);
+        } else {
+            System.out.println("Invalid withdrawal amount");
+        }
+    }
+}
+
+// Derived class
+class SavingsAccount extends Account {
+    private double interestRate;
+
+    // Constructor
+    public SavingsAccount(String accountNumber, double initialBalance, double interestRate) {
+        super(accountNumber, initialBalance);
+        this.interestRate = interestRate;
+    }
+
+    // Method to add interest
+    public void addInterest() {
+        double interest = getBalance() * interestRate / 100;
+        deposit(interest);
+        System.out.println("Interest added: " + interest);
+    }
+}
+
+// Main class
+public class BankingSystem {
+    public static void main(String[] args) {
+        // Create a SavingsAccount object
+        SavingsAccount myAccount = new SavingsAccount("123456789", 1000.0, 5.0);
+
+        // Display account details
+        System.out.println("Account Number: " + myAccount.getAccountNumber());
+        System.out.println("Initial Balance: " + myAccount.getBalance());
+
+        // Perform some transactions
+        myAccount.deposit(500.0);
+        myAccount.withdraw(200.0);
+        myAccount.addInterest();
+
+        // Display final balance
+        System.out.println("Final Balance: " + myAccount.getBalance());
+    }
+}*/
+
+
+
+/*import java.util.Scanner;
+public class JavaBasics {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.print("enter a number: ");
+        int number= sc.nextInt();
+        
+        int numberOfDigits= 0,sumOfDigits= 0,reverseNumber= 0;
+        String evenDigits="",oddDigits="";
+        
+        while (number != 0) {
+            int digit= number%10;
+            numberOfDigits++;
+            sumOfDigits+= digit;
+            reverseNumber=reverseNumber*10+digit;
+
+            if (digit%2==0)evenDigits+=digit+" ";
+            else oddDigits +=digit+" ";
+            number/=10;
+        }
+        System.out.println("number of digits: "+numberOfDigits);
+        System.out.println("sum of digits: "+sumOfDigits);
+        System.out.println("reverse of the number: "+reverseNumber);
+        System.out.println("even digits: "+evenDigits);
+        System.out.println("odd digits: "+oddDigits);
+        sc.close();
+    }
+}*/
+
+
+/*import java.util.Scanner;
+public class JavaBasics {
+    public static int countDigits(int number) {
+        int count = 0;
+        while (number != 0) {
+            count++;
+            number /= 10;
+        }
+        return count;
+    }
+    public static int power(int base, int exponent) {
+        int result = 1;
+        for (int i = 0; i < exponent; i++) {
+            result *= base;
+        }
+        return result;
+    }
+    public static boolean isArmstrongNumber(int number) {
+        int originalNumber = number;
+        int sum = 0;
+        int numberOfDigits = countDigits(number);
+        while (number != 0) {
+            int digit= number%10;
+            sum+= power(digit,numberOfDigits);
+            number/= 10;
+        }
+        return sum== originalNumber;
+    }
+    public static int calculateDecodedNumber(int number, boolean isArmstrong) {
+        int decodedNumber = 0;
+        int position = 1;
+        
+        while (number != 0) {
+            int digit = number % 10;
+            
+            if (isArmstrong) {
+                if (position % 2 == 0) {
+                    decodedNumber += digit;
+                }
+            } else {
+                if (position % 2 != 0) {
+                    decodedNumber += digit;
+                }
+            }
+            number /= 10;
+            position++;
+        }return decodedNumber;
+    }
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the encoded number: ");
+        int number = sc.nextInt();
+        
+        boolean isArmstrong = isArmstrongNumber(number);
+        int decodedNumber = calculateDecodedNumber(number, isArmstrong);
+        
+        System.out.println("Decoded number: " + decodedNumber);
+        sc.close();
+    }
+}*/
+
+
+
