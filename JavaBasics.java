@@ -1246,3 +1246,32 @@ public class JavaBasics{
         printSubarrays(number);
     }
 }*/
+
+
+
+//sum of subarrys
+/*import java.util.*;
+public class JavaBasics{
+    public static void SubArraySum(int[] number){
+        int max_sum = Integer.MIN_VALUE;
+        int curr_sum=0;
+        for(int i=0;i<number.length;i++){
+            int start=i;
+            for(int j=i;j<number.length;j++){
+                int end=j;
+                curr_sum=0;
+                for(int k=start;k<=end;k++){
+                    curr_sum+=number[k];
+                }System.out.println(curr_sum);
+                if(curr_sum>max_sum){
+                    max_sum= curr_sum;
+                }
+            }
+        }
+        System.out.println("max sum: "+max_sum);
+    }
+    public static void main(String args[]){
+        int number[] = {1,2,3,4};
+        SubArraySum(number);
+    }
+}*/
