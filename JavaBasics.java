@@ -1201,7 +1201,7 @@ public class JavaBasics {
 
 
 //write a code that takes input of the number of elements of array then take input from the user of each element then print it together in brackets.
-import java.util.Scanner;
+/*import java.util.Scanner;
 public class JavaBasics{
     public static void main(String args[]){
         Scanner sc= new Scanner(System.in);
@@ -1221,4 +1221,28 @@ public class JavaBasics{
             }
         }System.out.print("]");
     }
-}
+}*/
+
+
+//Subarrays
+/*import java.util.*;
+public class JavaBasics{
+    public static void printSubarrays(int number[]){
+        int total_sub_arrays=0;
+        for(int i=0;i<number.length;i++){
+            int start=i;
+            for(int j=i;j<number.length;j++){
+                int end=j;
+                for(int k=start;k<=end;k++){
+                    System.out.print(number[k]+" ");
+                }
+                total_sub_arrays++;
+                System.out.println();
+            }System.out.println();
+        }System.out.println("num of sub arrays: "+total_sub_arrays);
+    }
+    public static void main(String args[]){
+        int number[]={2, 3, 4, 5, 6, 7};
+        printSubarrays(number);
+    }
+}*/
