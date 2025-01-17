@@ -1092,3 +1092,133 @@ public class JavaBasics {
         new_pair(num);
     }
 }*/
+
+
+
+/*public class JavaBasics {
+    public static void main(String[] args) {
+        int[][][] array = {
+            {
+                {11, 12, 13},
+                {14, 15, 16}
+            },
+            {
+                {07, 8, 9},
+                {010, 011, 012}
+            }
+        };
+
+        for (int i = 0; i < array.length; i++) { 
+            System.out.println("Layer " + i + ":");
+            for (int j = 0; j < array[i].length; j++) { 
+                for (int k = 0; k < array[i][j].length; k++) { 
+                    System.out.print(array[i][j][k] + " ");
+                }
+                System.out.println();
+            }
+            System.out.println();
+        }
+    }
+}*/
+
+
+
+// write a program to find the maximum value in a 3D array:
+/*public class JavaBasics {
+    public static void main(String[] args) {
+        int[][][] array = {
+            {{1, 2, 3}, {4, 5, 6}},
+            {{7, 8, 9}, {10, 11, 12}}
+        };
+        int max = Integer.MIN_VALUE;
+
+        for (int[][] layer : array) {
+            for (int[] row : layer) {
+                for (int value : row) {
+                    if (value > max) {
+                        max = value;
+                    }
+                }
+            }
+        }
+        System.out.println("Maximum value in the 3D array: " + max);
+    }
+}*/
+
+
+
+// Write a program to calculate the sum of all elements in a 3D array:
+/*public class JavaBasics {
+    public static void main(String[] args) {
+        int[][][] array = {
+            {{1, 2, 3}, {4, 5, 6}},
+            {{7, 8, 9}, {10, 11, 12}}
+        };
+
+        int sum = 0;
+
+        for (int[][] layer : array) {
+            for (int[] row : layer) {
+                for (int value : row) {
+                    sum += value;
+                }
+            }
+        }
+        System.out.println("Sum of all elements in the 3D array: " + sum);
+    }
+}*/
+
+
+
+// Write a program to count how many elements in a 3D array are greater than a given value x:
+/*import java.util.Scanner;
+public class JavaBasics {
+    public static void main(String[] args) {
+        int[][][] array = {
+            {{1, 2, 3}, {4, 5, 6}},
+            {{7, 8, 9}, {10, 11, 12}}
+        };
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a value for X: ");
+        int x = scanner.nextInt();
+
+        int count = 0;
+
+        for (int[][] layer : array) {
+            for (int[] row : layer) {
+                for (int value : row) {
+                    if (value > x) {
+                        count++;
+                    }
+                }
+            }
+        }
+
+        System.out.println("Number of elements greater than " + x + ": " + count);
+    }
+}*/
+
+
+//write a code that takes input of the number of elements of array then take input from the user of each element then print it together in brackets.
+import java.util.Scanner;
+public class JavaBasics{
+    public static void main(String args[]){
+        Scanner sc= new Scanner(System.in);
+        System.out.print("Enter the number of elements: ");
+        int n=sc.nextInt();
+        int arr[]=new int[n];
+
+        for(int i=0;i<n;i++){
+            arr[i]=sc.nextInt();
+        }
+
+        System.out.print("[");
+        for(int i=0;i<n;i++){
+            System.out.print(arr[i]);
+            if(i<n-1){
+                System.out.print(", ");
+            }
+        }System.out.print("]");
+    }
+}
