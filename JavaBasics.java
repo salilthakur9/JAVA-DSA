@@ -1275,3 +1275,581 @@ public class JavaBasics{
         SubArraySum(number);
     }
 }*/
+
+
+
+// Array methods to insert:
+/*import java.util.Scanner;
+
+public class JavaBasics {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int[] array = null; 
+        int size = 0; 
+
+        while (true) {
+            System.out.println("\nChoose an option: ");
+            System.out.println("1. Create an array");
+            System.out.println("2. Show array data");
+            System.out.println("3. Insert an element at the end of the array");
+            System.out.println("4. Insert an element at the beginning of the array");
+            System.out.println("5. Insert an element at a specific position");
+            System.out.println("6. Exit");
+
+            System.out.print("Enter your choice: ");
+            int choice = scanner.nextInt();
+
+            switch (choice) {
+                case 1:
+                    System.out.print("Enter the size of the array: ");
+                    size = scanner.nextInt();
+                    array = new int[size];
+                    System.out.println("Enter " + size + " elements for the array:");
+                    for (int i = 0; i < size; i++) {
+                        array[i] = scanner.nextInt();
+                    }
+                    System.out.println("Array created successfully!");
+                    break;
+
+                case 2:
+                    if (array == null) {
+                        System.out.println("No array exists!");
+                    } else {
+                        System.out.println("Array elements:");
+                        for (int num : array) {
+                            System.out.print(num + " ");
+                        }
+                        System.out.println();
+                    }
+                    break;
+
+                case 3:
+                    if (array == null) {
+                        System.out.println("No array exists!");
+                    } else {
+                        System.out.print("Enter the element: ");
+                        int newElement = scanner.nextInt();
+                        int[] newArray = new int[size + 1];
+                        for (int i = 0; i < size; i++) {
+                            newArray[i] = array[i];
+                        }
+                        newArray[size] = newElement;
+                        array = newArray;
+                        size++;
+                        System.out.println("Element inserted!");
+                    }
+                    break;
+
+                case 4:
+                    if (array == null) {
+                        System.out.println("No array exists!");
+                    } else {
+                        System.out.print("Enter the element: ");
+                        int newElement = scanner.nextInt();
+                        int[] newArray = new int[size + 1];
+                        newArray[0] = newElement;
+                        for (int i = 0; i < size; i++) {
+                            newArray[i + 1] = array[i];
+                        }
+                        array = newArray;
+                        size++;
+                        System.out.println("Element inserted at the beginning!");
+                    }
+                    break;
+
+                case 5:
+                    if (array == null) {
+                        System.out.println("No array exists!");
+                    } else {
+                        System.out.print("Enter the position (0-based index): ");
+                        int position = scanner.nextInt();
+                        if (position < 0 || position > size) {
+                            System.out.println("Invalid position!");
+                        } else {
+                            System.out.print("Enter the element: ");
+                            int newElement = scanner.nextInt();
+                            int[] newArray = new int[size + 1];
+                            for (int i = 0; i < position; i++) {
+                                newArray[i] = array[i];
+                            }
+                            newArray[position] = newElement;
+                            for (int i = position; i < size; i++) {
+                                newArray[i + 1] = array[i];
+                            }
+                            array = newArray;
+                            size++;
+                            System.out.println("Element inserted at position " + position + "!");
+                        }
+                    }
+                    break;
+
+                case 6:
+                    System.out.println("Exiting program!");
+                    scanner.close();
+                    return;
+
+                default:
+                    System.out.println("Invalid choice! Please choose a valid option.");
+                    break;
+            }
+        }
+    }
+}*/
+
+
+
+/*import java.util.Scanner;
+public class JavaBasics {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        int[][] matrix = new int[3][3];
+        System.out.println("Enter 9 numbers:");
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                matrix[i][j] = sc.nextInt();
+            }
+        }
+        
+        System.out.println("The 3x3 matrix is:");
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                System.out.print(matrix[i][j] + " ");
+            }System.out.println();
+        }sc.close();
+    }
+}*/
+
+
+
+/*import java.util.Scanner;
+public class JavaBasics {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.print("Enter the number of rows: ");
+        int rows = sc.nextInt();
+        System.out.print("Enter the number of columns: ");
+        int cols = sc.nextInt();
+        
+        int[][] matrix = new int[rows][cols];
+        
+        System.out.println("Enter the elements of the matrix:");
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < cols; j++) {
+                matrix[i][j] = sc.nextInt();
+            }
+        }
+        
+        System.out.println("The matrix is:");
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < cols; j++) {
+                System.out.print(matrix[i][j] + " ");
+            }
+            System.out.println();
+        }
+        
+        sc.close();
+    }
+}*/
+
+
+
+/*import java.util.Scanner;
+class Matrix {
+    private int[][] matrix;
+    private int rows;
+    private int cols;
+
+    public void input() {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the number of rows: ");
+        rows = sc.nextInt();
+        System.out.print("Enter the number of columns: ");
+        cols = sc.nextInt();
+        
+        matrix = new int[rows][cols];
+        System.out.println("Enter the elements of the matrix:");
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < cols; j++) {
+                matrix[i][j] = sc.nextInt();
+            }
+        }
+    }
+    public void display() {
+        System.out.println("The matrix is:");
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < cols; j++) {
+                System.out.print(matrix[i][j] + " ");
+            }System.out.println();
+        }
+    }
+}
+public class JavaBasics {
+    public static void main(String[] args) {
+        Matrix matrix = new Matrix();
+        matrix.input();
+        matrix.display();
+    }
+}*/
+
+
+
+/*import java.util.Scanner;
+class Matrix {
+    private int[][] matrix;
+    private int rows;
+    private int cols;
+
+    public void input() {
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.print("Enter the number of rows: ");
+        rows = sc.nextInt();
+        System.out.print("Enter the number of columns: ");
+        cols = sc.nextInt();
+        matrix = new int[rows][cols];
+        
+        System.out.println("Enter the elements of the matrix:");
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < cols; j++) {
+                matrix[i][j] = sc.nextInt();
+            }
+        }
+    }
+
+    public void display() {
+        System.out.println("The matrix is:");
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < cols; j++) {
+                System.out.print(matrix[i][j] + " ");
+            } System.out.println();
+        }
+    }
+
+    public void transpose() {
+        int[][] transposedMatrix = new int[cols][rows];
+        
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < cols; j++) {
+                transposedMatrix[j][i] = matrix[i][j];
+            }
+        }matrix = transposedMatrix;
+        
+        int temp = rows;
+        rows = cols;
+        cols = temp;
+    }
+}
+
+public class JavaBasics {
+    public static void main(String[] args) {
+        Matrix matrix = new Matrix();
+        matrix.input();
+        matrix.display();
+        
+        matrix.transpose();
+        System.out.println("The transposed matrix is:");
+        matrix.display();
+    }
+}*/
+
+
+
+
+/*import java.util.Scanner;
+class Matrix {
+    private int[][] matrix;
+    private int rows;
+    private int cols;
+
+    public void input() {
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.print("Enter the number of rows: ");
+        rows = sc.nextInt();
+        System.out.print("Enter the number of columns: ");
+        cols = sc.nextInt();
+        
+        matrix = new int[rows][cols];
+        
+        System.out.println("Enter the elements of the matrix:");
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < cols; j++) {
+                matrix[i][j] = sc.nextInt();
+            }
+        }
+    }
+    public void display() {
+        System.out.println("The matrix is:");
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < cols; j++) {
+                System.out.print(matrix[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
+
+    public void rotate90Degrees() {
+        int[][] rotatedMatrix = new int[cols][rows];
+        
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < cols; j++) {
+                rotatedMatrix[j][rows - 1 - i] = matrix[i][j];
+            }
+        }
+        
+        matrix = rotatedMatrix;
+        
+        int temp = rows;
+        rows = cols;
+        cols = temp;
+    }
+}
+
+public class JavaBasics {
+    public static void main(String[] args) {
+        Matrix matrix = new Matrix();
+        matrix.input();
+        matrix.display();
+        
+        matrix.rotate90Degrees();
+        System.out.println("The matrix rotated by 90 degrees is:");
+    }
+}*/
+
+
+
+/*import java.util.*;
+public class JavaBasics{
+    public static void main(String args[]){
+        int n,i,j,temp,low,high,mid,flag=0;
+        System.out.println("Enter the array size: ");
+        Scanner sc= new Scanner(System.in);
+        n=sc.nextInt();
+        int arr[]=new int[n];
+        for(i=0;i<n;i++){
+            System.out.println("Enter the ["+i+"] element: ");
+            arr[i]=sc.nextInt();
+        }
+        System.out.println("Enter  the target element: ");
+        int key=sc.nextInt();
+
+        for(i=0;i<n-1;i++){
+            for(j=i+1;j<n;j++){
+                if(arr[i]>arr[j]){
+                    temp=arr[i];
+                    arr[i]=arr[j];
+                    arr[j]=temp;
+                }
+            }
+        }
+        System.out.println(Arrays.toString(arr));
+        low=0;
+        high=n-1;
+        while(low<=high){
+            mid=(low+high)/2;
+            if(arr[mid]==key){
+                System.out.println("Elements found at "+(mid+1)+" position");
+                flag=1;
+                break;
+            }else{
+                if(arr[mid]<key){
+                    low=mid+1;
+                }else{
+                    high=mid-1;
+                }
+            }
+        }
+        if(flag==0){
+            System.out.println("elements not found!");
+        }
+    }
+}*/
+
+
+
+
+/*import java.util.Scanner;
+class JavaBasics{
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int n=5;
+        int arr[] = new int[n];
+        System.out.print("Enter the elements : ");
+        for(int i=0;i<n;i++){
+            arr[i] = in.nextInt();
+        }
+        for(int i=0;i<n-1;i++){
+            int minIndex = i;
+            for(int j=i+1;j<n;j++){
+                if(arr[j]<arr[minIndex]){
+                    minIndex = j;
+                }
+            }
+            if(minIndex!=i){
+                int temp = arr[minIndex];
+                arr[minIndex] = arr[i];
+                arr[i] = temp;
+            }
+        } 
+        for(int i=0;i<n;i++){
+            System.out.print(arr[i]+" ");
+        }
+    }
+
+}*/
+
+//<<<<<<<<<<<<<---------------------------------------------------------------------------->>>>>>>>>>>>>>>>>>>>
+
+//1.  consider an employee management system where we need to duplicate an employee details (eg. for a new projedct assignment) without modifying 
+//the original records
+
+
+/*class Employee {
+    String name;
+    int age;
+    String department;
+
+    Employee(String name, int age, String department) {
+        this.name = name;
+        this.age = age;
+        this.department = department;
+    }
+
+    // Method to create a duplicate employee
+    Employee copy() {
+        return new Employee(name, age, department);
+    }
+
+    void display() {
+        System.out.println(name + " | " + age + " | " + department);
+    }
+}
+
+public class JavaBasics {
+    public static void main(String[] args) {
+        Employee emp1 = new Employee("John Doe", 30, "Engineering");
+        System.out.println("Original Employee:");
+        emp1.display();
+
+        Employee emp2 = emp1.copy(); 
+        emp2.name = "Jane Smith";  
+        emp2.age = 28;
+        emp2.department = "Marketing";
+
+        System.out.println("\nDuplicated (Modified) Employee:");
+        emp2.display();
+
+        System.out.println("\nOriginal Employee After Modification:");
+        emp1.display(); 
+    }
+}*/
+
+
+
+//2.  consider an employee management system, where an employess details need to be duplicate for a new project assignment. the duplicated records
+// shpuld have the same details but any modifications to the new record should not affect the original implement deep copy to achive this.
+
+
+/*class Employee {
+    private String name;
+    private int age;
+    private String department;
+
+    public Employee(String name, int age, String department) {
+        this.name = name;
+        this.age = age;
+        this.department = department;
+    }
+
+    public Employee copy() {
+        return new Employee(this.name, this.age, this.department);
+    }
+
+    public void display() {
+        System.out.println("Name: " + name + ", Age: " + age + ", Department: " + department);
+    }
+
+    public void setName(String name) { this.name = name; }
+    public void setAge(int age) { this.age = age; }
+    public void setDepartment(String department) { this.department = department; }
+}
+
+public class JavaBasics {
+    public static void main(String[] args) {
+        Employee original = new Employee("John Doe", 30, "Engineering");
+        System.out.println("Original Employee:");
+        original.display();
+
+        Employee duplicate = original.copy();
+
+        duplicate.setName("Jane Smith");
+        duplicate.setAge(28);
+        duplicate.setDepartment("Marketing");
+
+        System.out.println("\nDuplicated (Modified) Employee:");
+        duplicate.display();
+
+        System.out.println("\nOriginal Employee After Modification:");
+        original.display();
+    }
+}*/
+
+
+// A library management system need to track multiple copies of the same book. if a shallow copy is used changes in one should reflect in all other copies.
+// Demonstrate a shallow copy issue using java
+
+/*class Book {
+    String title;
+    String author;
+
+    public Book(String title, String author) {
+        this.title = title;
+        this.author = author;
+    }
+
+    public void display() {
+        System.out.println("Title: " + title + ", Author: " + author);
+    }
+}
+
+class LibraryBook {
+    Book book; 
+    int copyNumber;
+
+    public LibraryBook(Book book, int copyNumber) {
+        this.book = book;  
+        this.copyNumber = copyNumber;
+    }
+
+    public void display() {
+        System.out.println("Copy " + copyNumber + " -> " + "Title: " + book.title + ", Author: " + book.author);
+    }
+}
+
+public class JavaBasics {
+    public static void main(String[] args) {
+        Book originalBook = new Book("Java Programming", "James Gosling");
+
+        LibraryBook copy1 = new LibraryBook(originalBook, 1);
+        LibraryBook copy2 = new LibraryBook(originalBook, 2);
+
+        System.out.println("Before Modification:");
+        copy1.display();
+        copy2.display();
+
+        copy1.book.title = "Advanced Java";  
+
+        System.out.println("\nAfter Modification:");
+        copy1.display();
+        copy2.display(); 
+    }
+}*/
+
+
+
+// In a multiplayer game each player can have multiple weapons. if a shallow copy i used updating one player's weapon will modify all other using the same
+// refernce. Demonstrate this issue using shallow copy.
+
+
