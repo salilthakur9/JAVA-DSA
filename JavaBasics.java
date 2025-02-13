@@ -1853,3 +1853,37 @@ public class JavaBasics {
 // refernce. Demonstrate this issue using shallow copy.
 
 
+/*import java.util.Scanner;
+import java.util.Arrays;
+public class JavaBasics{
+    public static void main(String args[]){
+        int arr[]= {1,5,7,15,3,9,11,8};
+        int key, low,flag=0,high,mid;
+        Arrays.sort(arr);
+        System.out.println(Arrays.toString(arr));
+        System.out.println("Enter the target: ");
+        Scanner sc = new Scanner(System.in);
+        key=sc.nextInt();
+
+        low=0;
+        high=arr.length-1;
+        while(low<=high){
+            mid=(low+high)/2;
+            if(arr[mid]==key){
+                System.out.println("Element found at "+mid+" position: ");
+                flag=0;
+                break;
+            }else if(key<arr[mid]){
+                high=mid-1;
+            }else{
+                low=mid+1;
+            }
+        }
+        if(flag==0){
+            System.out.println("Element not found!");
+        }
+    }
+}*/
+
+
+
