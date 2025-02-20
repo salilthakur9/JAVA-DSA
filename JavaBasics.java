@@ -1887,3 +1887,122 @@ public class JavaBasics{
 
 
 
+/*import java.util.*;
+public class JavaBasics {
+    public static int findLast(int[] nums, int target) {
+        int low = 0, high = nums.length - 1, last = -1;
+        int mid;
+        while (low <= high) {
+            mid = low + (high - low) / 2;
+            if (nums[mid] == target) {
+                last = mid;
+                low = mid + 1;
+            } else if (nums[mid] < target) {
+                low = mid + 1;
+            } else {
+                high = mid - 1;
+            }
+        }
+        return last;
+    }
+
+    public static void main(String args[]) {
+        int arr[] = {1, 5, 5, 5, 7, 15, 3, 9, 11, 8};
+        int result;
+        Arrays.sort(arr);
+        System.out.println(Arrays.toString(arr));
+        result = findLast(arr, 5);
+        System.out.println("Last Position is: " + result);
+    }
+}*/
+
+
+
+
+/*import java.util.*;
+public class JavaBasics{
+    public static void selsort(int arr[]){
+        int n,i,j,min,temp;
+        n=arr.length;
+        for(i=0;i<n-1;i++){
+            min=i;
+            for(j=i+1;j<n;j++){
+                if(arr[j]<arr[min]){
+                    min=j;
+                }
+            }temp=arr[i];
+            arr[i]=arr[min];
+            arr[min]=temp;
+        }
+    }
+    public static void main(String args[]){
+        int arr[]={4,1,8,94,0,75,8,15};
+        selsort(arr);
+        System.out.println(Arrays.toString(arr));
+    }
+}*/
+
+
+
+/*import java.util.*;
+public class JavaBasics{
+    public static void sorted(int arr[]){
+        int n,i,j,min,temp;
+        n=arr.length;
+        for(i=0;i<n-1;i++){
+            min=i;
+            for(j=i+1;j<n;j++){
+                if(arr[j]<arr[min]){
+                    min=j;
+                }
+            }temp=arr[i];
+            arr[i]=arr[min];
+            arr[min]=temp;
+    }
+}
+    public static void main(String args[]){
+        Scanner sc= new Scanner(System.in);
+        System.out.print("Enter the number of students: ");
+        int num_of_students=sc.nextInt();
+        int arr[]=new int[num_of_students];
+        for(int i=1;i<=num_of_students;i++){
+            System.out.print("Enter marks of student "+i+": ");
+            arr[i]=sc.nextInt();
+        }
+        sorted(arr);
+        System.out.println(Arrays.toString(arr));
+    }
+}*/
+
+
+
+/*import java.util.*;
+
+public class JavaBasics {
+    public static void sorted(int arr[]) {
+        int n = arr.length;
+        for (int i = 0; i < n - 1; i++) {
+            for (int j = 0; j < n - 1 - i; j++) {
+                if (arr[j] > arr[j + 1]) {
+                    int temp = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = temp;
+                }
+            }
+        }
+    }
+
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the number of students: ");
+        int num_of_students = sc.nextInt();
+        int arr[] = new int[num_of_students];
+        for (int i = 0; i < num_of_students; i++) {
+            System.out.print("Enter marks of student " + (i + 1) + ": ");
+            arr[i] = sc.nextInt();
+        }
+        sorted(arr);
+        System.out.println("Sorted marks: " + Arrays.toString(arr));
+        sc.close();
+    }
+}*/
