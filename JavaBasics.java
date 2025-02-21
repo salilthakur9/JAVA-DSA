@@ -2006,3 +2006,61 @@ public class JavaBasics {
         sc.close();
     }
 }*/
+
+
+
+/*import java.util.*;
+public class JavaBasics{
+    public static void insert(int arr[]){
+        int n,i,j,temp;
+        n=arr.length;
+        for(i=1;i<n;i++){
+            temp=arr[i];
+            j=i-1;
+            while(j>=0 && arr[j]>=temp){
+                arr[j+1]=arr[j];
+                j--;
+            }
+            arr[j+1]=temp;
+        }
+    }
+    public static void main(String args[]){
+        int arr[]={4,3,78,34,2,10,66,0};
+        insert(arr);
+        System.out.println(Arrays.toString(arr));
+    }
+}*/
+
+
+
+// display batsman scores in decending order using insertion sort and the scores should be put in the run time
+
+/*import java.util.*;
+public class JavaBasics {
+    public static void sortedDescending(int arr[]) {
+        int n = arr.length;
+        for (int i = 1; i < n; i++) {
+            int key = arr[i];
+            int j = i - 1;
+            while (j >= 0 && arr[j] < key) {
+                arr[j + 1] = arr[j];
+                j = j - 1;
+            }
+            arr[j + 1] = key;
+        }
+    }
+
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the number of batsmen: ");
+        int num_of_batsmen = sc.nextInt();
+        int arr[] = new int[num_of_batsmen];
+        for (int i = 0; i < num_of_batsmen; i++) {
+            System.out.print("Enter score of batsman " + (i + 1) + ": ");
+            arr[i] = sc.nextInt();
+        }
+        sortedDescending(arr);
+        System.out.println("Scores in descending order: " + Arrays.toString(arr));
+        sc.close();
+    }
+}*/
