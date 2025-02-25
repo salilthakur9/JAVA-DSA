@@ -2064,3 +2064,142 @@ public class JavaBasics {
         sc.close();
     }
 }*/
+
+
+
+/*import java.util.Scanner;
+class JavaBasics{
+
+    static void merge(int []arr, int lo, int mid , int hi){
+        int an = mid-lo+1;
+        int bn = hi - mid;
+
+        int a[] = new int[an];
+        int b[] = new int[bn];
+        
+        for(int i=0;i<an;i++){
+            a[i] = arr[i+lo];
+        }
+        for(int i=0;i<bn;i++){
+            b[i] = arr[mid+1+i];
+        }
+
+        int i=0;
+        int j=0;
+        int k = lo;
+        while(i<an && j<bn){
+            if(a[i]<b[j]){
+                arr[k++] = a[i++];
+            }    
+            else{
+                arr[k++] = b[j++];
+            }
+        }
+
+        while(i<an){
+            arr[k++] = a[i++];
+        }
+        while(j<bn){
+            arr[k++] = b[j++];
+        }
+
+    }
+
+    static void mergeSort(int [] arr , int lo, int hi){
+        if(lo>=hi){
+            return;
+        }
+
+        int mid = lo+(hi-lo)/2;
+
+        mergeSort(arr, lo, mid);
+        mergeSort(arr, mid+1, hi);
+        merge(arr, lo, mid, hi);
+    }
+
+    public static void main(String[] args){
+        Scanner in = new Scanner(System.in);
+        int n;
+        System.out.print("Enter the number of elements in the array : ");
+        n = in.nextInt();
+        int arr[] = new int[n];
+        System.out.print("Enter the elements of the array : ");
+        for(int i=0;i<n;i++){
+            arr[i] = in.nextInt();
+        }
+
+        mergeSort(arr, 0, n-1);
+        System.out.print("Sorted Array = ");
+        for(int i=0;i<n;i++){
+            System.out.print(arr[i]+" ");
+        }
+    }
+}*/
+
+
+/*import java.util.Scanner;
+
+class JavaBasics {
+
+    static void merge(int[] arr, int lo, int mid, int hi) {
+        int an = mid - lo + 1;
+        int bn = hi - mid;
+
+        int[] a = new int[an];
+        int[] b = new int[bn];
+
+        for (int i = 0; i < an; i++) {
+            a[i] = arr[i + lo];
+        }
+        for (int i = 0; i < bn; i++) {
+            b[i] = arr[mid + 1 + i];
+        }
+
+        int i = 0, j = 0, k = lo;
+        while (i < an && j < bn) {
+            if (a[i] > b[j]) { // Change comparison to '>' for descending order
+                arr[k++] = a[i++];
+            } else {
+                arr[k++] = b[j++];
+            }
+        }
+
+        while (i < an) {
+            arr[k++] = a[i++];
+        }
+        while (j < bn) {
+            arr[k++] = b[j++];
+        }
+    }
+
+    static void mergeSort(int[] arr, int lo, int hi) {
+        if (lo >= hi) {
+            return;
+        }
+
+        int mid = lo + (hi - lo) / 2;
+
+        mergeSort(arr, lo, mid);
+        mergeSort(arr, mid + 1, hi);
+        merge(arr, lo, mid, hi);
+    }
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        System.out.print("Enter the number of batsmen: ");
+        int num_of_batsmen = in.nextInt();
+        int[] arr = new int[num_of_batsmen];
+        System.out.println("Enter the scores of the batsmen:");
+        for (int i = 0; i < num_of_batsmen; i++) {
+            System.out.print("Enter score of batsman " + (i + 1) + ": ");
+            arr[i] = in.nextInt();
+        }
+
+        mergeSort(arr, 0, num_of_batsmen - 1);
+        System.out.print("Scores in descending order: ");
+        for (int i = 0; i < num_of_batsmen; i++) {
+            System.out.print(arr[i] + " ");
+        }
+        in.close();
+    }
+}*/

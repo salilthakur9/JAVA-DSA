@@ -1,3 +1,5 @@
+//LIST
+
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -41,7 +43,6 @@ public class JavaCollection {
         Iterator<Integer> it = list.iterator();
         while(it.hasNext()){
             System.out.println(it.next());
-        }
-        
+        } 
     }
 }
