@@ -2203,3 +2203,41 @@ class JavaBasics {
         in.close();
     }
 }*/
+
+
+
+
+/*class JavaBasics {
+    public int calculate(int a, int b, String operation) {
+        switch (operation) {
+            case "add":return a + b;
+            case "subtract":return a - b;
+            case "multiply":return a * b;
+            case "divide":
+                if (b != 0){return a / b;}
+                else{throw new ArithmeticException("Division by zero is not allowed.");}
+            default:throw new IllegalArgumentException("Invalid operation: " + operation);
+        }
+    }
+
+    public double calculate(double a, double b){return a*b;}
+
+    public int calculate(int a, int b, int c){return a+b+c;}
+
+    public int calculate(String number1, String number2){
+        int a = Integer.parseInt(number1);
+        int b = Integer.parseInt(number2);
+        return a+b;
+}
+    public static void main(String[] args) {
+        JavaBasics calculator = new JavaBasics();
+
+        System.out.println("Addition: " + calculator.calculate(10, 5, "add"));
+        System.out.println("Subtraction: " + calculator.calculate(10, 5, "subtract"));
+        System.out.println("Multiplication: " + calculator.calculate(10, 5, "multiply"));
+        System.out.println("Division: " + calculator.calculate(10, 5, "divide"));
+        System.out.println("Product of doubles: " + calculator.calculate(5.5, 2.2));
+        System.out.println("Sum of three integers: " + calculator.calculate(1, 2, 3));
+        System.out.println("Sum of strings: " + calculator.calculate("10", "20"));
+    }
+}*/
