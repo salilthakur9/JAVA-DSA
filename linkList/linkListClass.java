@@ -32,3 +32,30 @@ public class linkListClass {
         sc.close();
     }
 }*/
+
+
+
+
+/*import java.util.*;
+public class linkListClass{
+    public static void main(String args[]){
+        Scanner sc= new Scanner(System.in);
+        LinkedList<String> names= new LinkedList<>();
+
+        System.out.println("Enter the names of the Students or type X to exit: ");
+        while(true){
+            System.out.print("Enter the name of the student: ");
+            String studentName=sc.nextLine();
+            if(studentName.equalsIgnoreCase("X")){
+                break;
+            }names.add(studentName);
+        }
+        System.out.println("these are the names: ");
+        for(String n:names){
+            System.out.println(n);
+        }sc.close();
+    }
+}*/
+
+
+

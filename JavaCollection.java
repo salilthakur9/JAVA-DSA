@@ -50,7 +50,7 @@ public class JavaCollection {
 
 
 
-import java.util.*;
+/*import java.util.*;
 public class JavaCollection{
     public static void main(String args[]){
         List<Integer> new_list = new ArrayList();
@@ -60,4 +60,4 @@ public class JavaCollection{
         new_list.add(23);
         System.out.println("list: "+new_list);
     }
-}
+}*/
