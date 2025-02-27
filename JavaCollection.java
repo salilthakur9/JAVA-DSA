@@ -1,6 +1,6 @@
 //LIST
 
-import java.util.ArrayList;
+/*import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 public class JavaCollection {
@@ -44,5 +44,20 @@ public class JavaCollection {
         while(it.hasNext()){
             System.out.println(it.next());
         } 
+    }
+}
+*/
+
+
+
+import java.util.*;
+public class JavaCollection{
+    public static void main(String args[]){
+        List<Integer> new_list = new ArrayList();
+        new_list.add(23);
+        new_list.add(23);
+        new_list.add(23);
+        new_list.add(23);
+        System.out.println("list: "+new_list);
     }
 }
