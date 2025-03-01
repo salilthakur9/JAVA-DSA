@@ -61,3 +61,25 @@ public class JavaCollection{
         System.out.println("list: "+new_list);
     }
 }*/
+
+
+
+
+/*import java.util.*;
+public class JavaCollection{
+    public static void main(String args[]){
+        Stack<String> names= new Stack<>();
+
+        names.push("Salil");
+        names.push("Thakur");
+        names.push("Salil Thakur");
+
+        System.out.println("Stack: "+names);
+
+        System.out.println(names.peek());
+        names.pop();
+        System.out.println("Stack now: "+names);
+
+        System.out.println(names.peek());
+    }
+}*/

@@ -59,3 +59,53 @@ public class linkListClass{
 
 
 
+import java.util.*;
+public class linkListClass {
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        LinkedList<String> list = new LinkedList<>();
+
+        while (true) {
+            System.out.println("\nChoose an option:");
+            System.out.println("1. Add a new element");
+            System.out.println("2. Delete an element");
+            System.out.println("3. Show the size of the list");
+            System.out.println("4. Exit");
+            System.out.print("----------------------------------------------Enter your choice: ");
+            int choice = sc.nextInt();
+            sc.nextLine();
+
+            switch (choice) {
+                case 1:
+                    System.out.print("----------------------------------------------Enter the element to add: ");
+                    String elementToAdd = sc.nextLine();
+                    list.add(elementToAdd);
+                    System.out.println("----------------------------------------------Element added.");
+                    break;
+
+                case 2:
+                    System.out.print("----------------------------------------------Enter the element to delete: ");
+                    String elementToDelete = sc.nextLine();
+                    if (list.remove(elementToDelete)) {
+                        System.out.println("----------------------------------------------Element deleted.");
+                    } else {
+                        System.out.println("----------------------------------------------Element not found.");
+                    }
+                    break;
+
+                case 3:
+                    System.out.println("----------------------------------------------The size of the list is: " + list.size());
+                    break;
+
+                case 4:
+                    System.out.println("----------------------------------------------Exiting program.");
+                    sc.close();
+                    return;
+
+                default:
+                    System.out.println("----------------------------------------------Invalid choice! Please choose a valid option.");
+                    break;
+            }
+        }
+    }
+}
