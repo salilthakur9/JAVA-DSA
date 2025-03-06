@@ -83,3 +83,20 @@ public class JavaCollection{
         System.out.println(names.peek());
     }
 }*/
+
+
+
+/*import java.util.HashMap;
+import java.util.Map;
+
+public class JavaCollection{
+    public static void main(String[] args) {
+        Map<String, Integer> number = new HashMap<>();
+        number.put("one", 1);
+        number.put("one2", 2);
+        number.put("one3", 1);
+        number.put("one4", 1);
+
+        System.out.println(number);
+    }
+}*/

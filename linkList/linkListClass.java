@@ -59,7 +59,7 @@ public class linkListClass{
 
 
 
-import java.util.*;
+/*import java.util.*;
 public class linkListClass {
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
@@ -108,4 +108,89 @@ public class linkListClass {
             }
         }
     }
-}
+}*/
+
+
+/*import java.util.Scanner;
+
+public class linkListClass {
+    class Node {
+        String name;
+        Node next;
+
+        public Node(String name) {
+            this.name = name;
+            this.next = null;
+        }
+    }
+
+    public Node head = null;
+    public Node tail = null;
+
+    public void addNode(String name) {
+        Node newnode = new Node(name);
+
+        if (head == null) {
+            head = newnode;
+            tail = newnode;
+        } else {
+            tail.next = newnode;
+            tail = newnode;
+        }
+    }
+
+    public void display() {
+        Node current = head;
+
+        if (head == null) {
+            System.out.println("List is empty!");
+            return;
+        }
+        System.out.println("Nodes of singly linked list:");
+        while (current != null) {
+            System.out.print(current.name + " ");
+            current = current.next;
+        }
+        System.out.println();
+    }
+
+    public int countNodes() {
+        int count = 0;
+        Node current = head;
+        while (current != null) {
+            count++;
+            current = current.next;
+        }
+        return count;
+    }
+
+    public static void main(String args[]) {
+        linkListClass ll = new linkListClass();
+        int choice = 1;
+        String name;
+        Scanner sc = new Scanner(System.in);
+        ll.addNode("Chandighar");
+        ll.addNode("Shimla");
+        ll.addNode("Delhi");
+        while (choice != 4) {
+            System.out.println("1-Add Element!");
+            System.out.println("2-Display Element!");
+            System.out.println("3-Count Nodes!");
+            System.out.println("4-Exit!");
+            choice = sc.nextInt();
+            sc.nextLine();
+            if (choice == 1) {
+                System.out.println("Enter the element to be added: ");
+                name = sc.nextLine();
+                ll.addNode(name);
+            } else if (choice == 2) {
+                ll.display();
+            } else if (choice == 3) {
+                System.out.println("Total number of nodes: " + ll.countNodes());
+            } else {
+                System.exit(0);
+            }
+        }
+        sc.close();
+    }
+}*/
