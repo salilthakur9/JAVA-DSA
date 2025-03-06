@@ -261,3 +261,76 @@ public class linkListClass {
 
 
 
+import java.util.*;
+
+public class linkListClass {
+    class Node {
+        String name;
+        Node next;
+
+        public Node(String name) {
+            this.name = name;
+            this.next = null;
+        }
+    }
+
+    public Node head = null;
+    public Node tail = null;
+
+    public void addNode(String name) {
+        Node newNode = new Node(name);
+
+        if (head == null) {
+            head = newNode;
+            tail = newNode;
+        } else {
+            tail.next = newNode;
+            tail = newNode;
+        }
+    }
+
+    public void display() {
+        Node current = head;
+        if (head == null) {
+            System.out.println("List is empty");
+            return;
+        }
+        System.out.println("Nodes of singly linked list:");
+        while (current != null) {
+            System.out.print(current.name + " ");
+            current = current.next;
+        }
+        System.out.println();
+    }
+
+    public static void main(String args[]) {
+        linkListClass ll = new linkListClass();
+        int choice = 1;
+        String name;
+        Scanner sc = new Scanner(System.in);
+        ll.addNode("salil");
+        ll.addNode("salillll");
+        ll.addNode("salillllllll");
+        while (choice != 3) {
+            System.out.println("1-Add element");
+            System.out.println("2-Display");
+            System.out.println("3-Exit");
+            System.out.print("Enter your choice: ");
+            choice = sc.nextInt();
+            sc.nextLine(); // Consume the newline character
+            if (choice == 1) {
+                System.out.print("Enter the element to be added: ");
+                name = sc.nextLine();
+                ll.addNode(name);
+            } else if (choice == 2) {
+                ll.display();
+            } else if (choice == 3) {
+                System.out.println("Exiting program.");
+                sc.close();
+                return;
+            } else {
+                System.out.println("Invalid choice! Please choose a valid option.");
+            }
+        }
+    }
+}
