@@ -194,3 +194,70 @@ public class linkListClass {
         sc.close();
     }
 }*/
+
+
+
+/*import java.util.*;
+
+public class linkListClass {
+    public static void main(String args[]) {
+        LinkedList<String> ll = new LinkedList<>();
+        int choice = 1;
+        String name;
+        Scanner sc = new Scanner(System.in);
+        ll.add("Punjab");
+        ll.add("Jammu");
+        ll.add("Goa");
+
+        while (choice != 5) {
+            System.out.println("\nChoose an option:");
+            System.out.println("1-Add Element!");
+            System.out.println("2-Size of Linked List!");
+            System.out.println("3-Sort Linked list");
+            System.out.println("4-Search linked list");
+            System.out.println("5-Exit");
+            System.out.print("Enter your choice: ");
+            choice = sc.nextInt();
+            sc.nextLine();
+            switch (choice) {
+                case 1:
+                    System.out.print("Enter the element to add: ");
+                    name = sc.nextLine();
+                    ll.add(name);
+                    System.out.println("Element added.");
+                    break;
+
+                case 2:
+                    System.out.println("Size of the linked list: " + ll.size());
+                    break;
+
+                case 3:
+                    Collections.sort(ll);
+                    System.out.println("Sorted linked list: " + ll);
+                    break;
+
+                case 4:
+                    System.out.print("Enter the element to search: ");
+                    name = sc.nextLine();
+                    if (ll.contains(name)) {
+                        System.out.println("Element found in the linked list.");
+                    } else {
+                        System.out.println("Element not found in the linked list.");
+                    }
+                    break;
+
+                case 5:
+                    System.out.println("Exiting program.");
+                    sc.close();
+                    return;
+
+                default:
+                    System.out.println("Invalid choice! Please choose a valid option.");
+                    break;
+            }
+        }
+    }
+}*/
+
+
+
