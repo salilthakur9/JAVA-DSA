@@ -261,7 +261,7 @@ public class linkListClass {
 
 
 
-import java.util.*;
+/*import java.util.*;
 
 public class linkListClass {
     class Node {
@@ -333,4 +333,133 @@ public class linkListClass {
             }
         }
     }
-}
+}*/
+
+
+
+
+/*import java.util.Scanner;
+public class linkListClass {
+    class Node {
+        String name;
+        Node next;
+
+        public Node(String name) {
+            this.name = name;
+            this.next = null;
+        }
+    }
+
+    public Node head = null;
+    public Node tail = null;
+
+    public void addNode(String name) {
+        Node newNode = new Node(name);
+
+        if (head == null) {
+            head = newNode;
+            tail = newNode;
+        } else {
+            tail.next = newNode;
+            tail = newNode;
+        }
+    }
+
+    public void display() {
+        Node current = head;
+        if (head == null) {
+            System.out.println("List is empty");
+            return;
+        }
+        System.out.println("Nodes of singly linked list:");
+        while (current != null) {
+            System.out.print(current.name + " ");
+            current = current.next;
+        }
+        System.out.println();
+    }
+
+    public boolean search(String name) {
+        Node current = head;
+        while (current != null) {
+            if (current.name.equals(name)) {
+                return true;
+            }
+            current = current.next;
+        }
+        return false;
+    }
+
+    public void sort() {
+        if (head == null || head.next == null) {
+            return;
+        }
+
+        Node current = head;
+        Node index = null;
+        String temp;
+
+        while (current != null) {
+            index = current.next;
+            while (index != null) {
+                if (current.name.compareTo(index.name) > 0) {
+                    temp = current.name;
+                    current.name = index.name;
+                    index.name = temp;
+                }
+                index = index.next;
+            }
+            current = current.next;
+        }
+    }
+
+    public static void main(String args[]) {
+        linkListClass ll = new linkListClass();
+        int choice = 1;
+        String name;
+        Scanner sc = new Scanner(System.in);
+        ll.addNode("salil");
+        ll.addNode("salillll");
+        ll.addNode("salillllllll");
+        while (choice != 5) {
+            System.out.println("1-Add element");
+            System.out.println("2-Display");
+            System.out.println("3-Search");
+            System.out.println("4-Sort");
+            System.out.println("5-Exit");
+            System.out.print("Enter your choice: ");
+            choice = sc.nextInt();
+            sc.nextLine(); 
+            switch (choice) {
+                case 1:
+                    System.out.print("Enter the element to be added: ");
+                    name = sc.nextLine();
+                    ll.addNode(name);
+                    break;
+                case 2:
+                    ll.display();
+                    break;
+                case 3:
+                    System.out.print("Enter the element to search: ");
+                    name = sc.nextLine();
+                    if (ll.search(name)) {
+                        System.out.println("Element found in the linked list.");
+                    } else {
+                        System.out.println("Element not found in the linked list.");
+                    }
+                    break;
+                case 4:
+                    ll.sort();
+                    System.out.println("Linked list sorted.");
+                    break;
+                case 5:
+                    System.out.println("Exiting program.");
+                    sc.close();
+                    return;
+                default:
+                    System.out.println("Invalid choice! Please choose a valid option.");
+                    break;
+            }
+        }
+    }
+}*/
