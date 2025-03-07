@@ -2241,3 +2241,68 @@ class JavaBasics {
         System.out.println("Sum of strings: " + calculator.calculate("10", "20"));
     }
 }*/
+
+
+
+
+/*class BankAccount {
+    public double interestRate() {
+        return 0.0;
+    }
+    public final double minimumBalance() {
+        return 1000.0;
+    }
+}
+class SavingsAccount extends BankAccount {
+    @Override
+    public double interestRate() {
+        return 4.0;
+    }
+}
+class FixedDeposit extends BankAccount {
+    @Override
+    public double interestRate() {
+        return 6.5; 
+    }
+}
+public class JavaBasics {
+    public static void main(String[] args) {
+        BankAccount savings = new SavingsAccount();
+        BankAccount fixedDeposit = new FixedDeposit();
+
+        System.out.println("Savings Account Interest Rate: " + savings.interestRate() + "%");
+        System.out.println("Fixed Deposit Interest Rate: " + fixedDeposit.interestRate() + "%");
+        System.out.println("Minimum Balance: " + savings.minimumBalance());
+    }
+}*/
+
+
+
+/*class Calculator {
+    public int add(int a, int b) {
+        return a + b;
+    }
+    public double add(double a, double b, double c) {
+        return a + b + c;
+    }
+    public int add(int... numbers) {
+        int sum = 0;
+        for (int num : numbers) {
+            sum += num;
+        }
+        return sum;
+    }
+    public static void main(String[] args) {
+        Calculator calculator = new Calculator();
+
+        System.out.println("Addition of two integers: " + calculator.add(10, 20));
+
+        System.out.println("Addition of three doubles: " + calculator.add(1.1, 2.2, 3.3));
+
+        System.out.println("Addition of multiple integers: " + calculator.add(1, 2, 3, 4, 5));
+
+        byte byteValue = 10;
+        short shortValue = 20;
+        System.out.println("Addition with type promotion (byte and short): " + calculator.add(byteValue, shortValue));
+    }
+}*/
