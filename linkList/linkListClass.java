@@ -463,3 +463,163 @@ public class linkListClass {
         }
     }
 }*/
+
+
+
+/*import java.util.*;
+public class linkListClass{
+    class Node{
+        int data;
+        Node prev;
+        Node next;
+
+        public Node(int data){
+            this.data=data;
+        }
+    }
+
+    Node head=null;
+    Node tail=null;
+
+    public void addNode(int data){
+        Node newnode=new Node(data);
+        if(head==null){
+            head=tail=newnode;
+            head.prev=null;
+            tail.prev=null;
+        }else{
+            tail.next=newnode;
+            newnode.prev=tail;
+            tail=newnode;
+            tail.next=null;
+        }
+    }
+    public void display(){
+        Node current=head;
+        if(head==null){
+            System.out.println("List is empty!");
+            return;
+        }System.out.println("Nodes of doubly linked list: ");
+        while(current!=null){
+            System.out.print(current.data+" ");
+            current=current.next;
+        }System.out.println();
+    }
+    public void reverseddisplay(){
+        Node current=tail;
+        if(tail==null){
+            System.out.println("List is empty!");
+            return;
+        }System.out.println("Nodes of doubly linked list: ");
+        while(current!=null){
+            System.out.print(current.data+" ");
+            current=current.prev;
+        }
+        System.out.println();
+    }
+    public static void main(String args[]){
+        linkListClass dl = new linkListClass();
+        dl.addNode(10);
+        dl.addNode(20);
+        dl.addNode(30);
+        dl.addNode(40);
+        dl.addNode(50);
+
+        dl.display();
+        dl.reverseddisplay();
+    }
+}*/
+
+
+
+/*import java.util.*;
+public class linkListClass {
+    class Node {
+        String name;
+        Node prev;
+        Node next;
+        public Node(String name) {
+            this.name = name;
+        }
+    }
+
+    Node head = null;
+    Node tail = null;
+
+    public void addNode(String name) {
+        Node newNode = new Node(name);
+        if (head == null) {
+            head = tail = newNode;
+            head.prev = null;
+            tail.next = null;
+        } else {
+            tail.next = newNode;
+            newNode.prev = tail;
+            tail = newNode;
+            tail.next = null;
+        }
+    }
+
+    public void display() {
+        Node current = head;
+        if (head == null) {
+            System.out.println("List is empty!");
+            return;
+        }
+        System.out.println("Nodes of doubly linked list:");
+        while (current != null) {
+            System.out.print(current.name + " ");
+            current = current.next;
+        }
+        System.out.println();
+    }
+
+    public int size() {
+        int count = 0;
+        Node current = head;
+        while (current != null) {
+            count++;
+            current = current.next;
+        }
+        return count;
+    }
+
+    public static void main(String args[]) {
+        linkListClass dl = new linkListClass();
+        Scanner sc = new Scanner(System.in);
+        int choice = 0;
+        String name;
+
+        while (choice != 4) {
+            System.out.println("\nChoose an option:");
+            System.out.println("1-Add element");
+            System.out.println("2-Display");
+            System.out.println("3-Size");
+            System.out.println("4-Exit");
+            System.out.print("Enter your choice: ");
+            choice = sc.nextInt();
+            sc.nextLine(); 
+
+            switch (choice) {
+                case 1:
+                    System.out.print("Enter the name to be added: ");
+                    name = sc.nextLine();
+                    dl.addNode(name);
+                    break;
+                case 2:
+                    dl.display();
+                    break;
+                case 3:
+                    System.out.println("Size of the linked list: " + dl.size());
+                    break;
+                case 4:
+                    System.out.println("Exiting program.");
+                    sc.close();
+                    return;
+                default:
+                    System.out.println("Invalid choice! Please choose a valid option.");
+                    break;
+            }
+        }
+    }
+}*/
