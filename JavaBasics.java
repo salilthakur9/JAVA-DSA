@@ -2306,3 +2306,75 @@ public class JavaBasics {
         System.out.println("Addition with type promotion (byte and short): " + calculator.add(byteValue, shortValue));
     }
 }*/
+
+
+
+// Structure of node in linked list
+/*class Node{
+    int rollno;
+    Node next;
+    Node (int rollno){
+        this.rollno=rollno;
+        this.next=null;
+    }
+}*/
+
+
+
+/*import java.util.*;
+public class JavaBasics {
+    class Node {
+        int rollno;
+        Node next;
+
+        Node(int rollno) {
+            this.rollno = rollno;
+            this.next = null;
+        }
+    }
+
+    Node head = null;
+    Node current;
+
+    public void addNode(int roll) {
+        Node newnode = new Node(roll);
+        if (head == null) {
+            head = newnode;
+        } else {
+            current = head;
+            while (current.next != null) {
+                current = current.next;
+            }
+            current.next = newnode;
+        }
+    }
+
+    public void display() {
+        if (head == null) {
+            System.out.println("Empty linked list!");
+        } else {
+            current = head;
+            System.out.print("Nodes are: ");
+            while (current != null) {
+                System.out.print(current.rollno + " ");
+                current = current.next;
+            }
+            System.out.println();
+        }
+    }
+
+    public static void main(String[] args) {
+        JavaBasics list = new JavaBasics();
+        list.display();
+
+        list.addNode(1);
+        list.addNode(2);
+        list.addNode(3);
+        list.addNode(4);
+        list.addNode(5);
+
+        list.display();
+    }
+}*/
+
+
