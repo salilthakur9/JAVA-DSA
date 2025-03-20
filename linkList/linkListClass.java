@@ -623,3 +623,99 @@ public class linkListClass {
         }
     }
 }*/
+
+
+
+/*import java.util.*;
+public class linkListClass {
+    class Node {
+        int rollno;
+        Node next;
+
+        Node(int rollno) {
+            this.rollno = rollno;
+        }
+    }
+
+    Node head = null;
+    Node current;
+
+    public void addNode(int rollno) {
+        Node newnode = new Node(rollno);
+        if (head == null) {
+            head = newnode;
+        } else {
+            current = head;
+            while (current.next != null) {
+                current = current.next;
+            }
+            current.next = newnode;
+        }
+    }
+
+    public void addNodeAtStart(int roll) {
+        Node newNode = new Node(roll); 
+        newNode.next = head; 
+        head = newNode;
+    }
+
+    public void display() {
+        if (head == null) {
+            System.out.println("Empty linked list!");
+        } else {
+            current = head;
+            System.out.print("Nodes are: ");
+            while (current != null) {
+                System.out.print(current.rollno + " ");
+                current = current.next;
+            }
+            System.out.println();
+        }
+    }
+
+    public void countNodes(){
+        int count=0;
+        if(head==null){
+            System.out.println("Empty linked list!");
+        }else{
+            Node current=head;
+            while(current!=null){
+                count++;
+                current=current.next;
+            }System.out.println("Numbers of nodes are "+count);
+        }
+    }
+
+    public void search(int key){
+        Node current;
+        int flag=0,pos=1;
+        current=head;
+        while(current!=null){
+            if(current.rollno==key){
+                flag=1;
+                break;
+            }current=current.next;
+            pos++;
+        }
+        if(flag==1){
+            System.out.println("Element found in the linked list at "+pos+" position.");
+        }else{
+            System.out.println("Element not found!");
+        }
+    }
+
+    public static void main(String args[]) {
+        linkListClass ll = new linkListClass();
+        ll.display(); 
+        ll.addNode(10); 
+        ll.addNode(20);
+        ll.addNode(30);
+        ll.display();
+
+        ll.addNodeAtStart(0); 
+        ll.display(); 
+        ll.countNodes();
+        ll.search(20);
+        ll.search(100);
+    }
+}*/
