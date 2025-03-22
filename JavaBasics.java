@@ -2462,3 +2462,33 @@ public class JavaBasics{
 
 
 
+/*import java.util.Scanner;
+public class JavaBasics{
+    public static int max_profit(int arr[]){
+        int maxProfit=0, min=Integer.MAX_VALUE;
+        for(int ar: arr){
+            if(ar < min){
+                min = ar;
+            }else if(ar - min > maxProfit){
+                maxProfit = ar - min;
+            }
+        }
+        return maxProfit;
+    }
+    
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the number of elements: ");
+        int N = sc.nextInt();
+
+        int[] arr = new int[N];
+        System.out.println("Enter " + N + " stock prices:");  
+        
+        for(int i = 0; i < N; i++){
+            arr[i] = sc.nextInt();
+        }
+
+        System.out.println("The maximum profit is: " + max_profit(arr));
+        sc.close();
+    }
+}*/
