@@ -2492,3 +2492,65 @@ public class JavaBasics{
         sc.close();
     }
 }*/
+
+
+
+/*import java.util.Scanner;
+public class JavaBasics{
+    public static int fiveStar(int arr[]){
+        int count=0;
+        for(int ar:arr){
+            if(ar==5)count++;
+        }return count;
+    }
+    public static int fourStar(int arr[]){
+        int count=0;
+        for(int ar:arr){
+            if(ar==4)count++;
+        }return count;
+    }
+    public static int threeStar(int arr[]){
+        int count=0;
+        for(int ar:arr){
+            if(ar==3)count++;
+        }return count;
+    }
+    public static int twoStar(int arr[]){
+        int count=0;
+        for(int ar:arr){
+            if(ar==2)count++;
+        }return count;
+    }
+    public static int oneStar(int arr[]){
+        int count=0;
+        for(int ar:arr){
+            if(ar==1)count++;
+        }return count;
+    }
+    public static int zeroStar(int arr[]){
+        int count=0;
+        for(int ar:arr){
+            if(ar==0)count++;
+        }return count;
+    }
+
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter the number of element: ");
+        int N=sc.nextInt();
+
+        int[] arr=new int[N];
+        for(int i=0;i<N;i++){
+            arr[i]=sc.nextInt();
+        }
+        System.out.print("5 stars users: "+fiveStar(arr)+"\n");
+        System.out.print("4 stars users: "+fourStar(arr)+"\n");
+        System.out.print("3 stars users: "+threeStar(arr)+"\n");
+        System.out.print("2 stars users: "+twoStar(arr)+"\n");
+        System.out.print("1 stars users: "+oneStar(arr)+"\n");
+        System.out.print("0 stars users: "+zeroStar(arr));
+    }
+}*/
+
+
+
