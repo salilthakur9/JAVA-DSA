@@ -2554,3 +2554,25 @@ public class JavaBasics{
 
 
 
+/*public class JavaBasics{
+    public static String winner(char[][] arr){
+        for(int i=0;i<3;i++){
+            if(arr[i][0]!='-' && arr[i][1]==arr[i][0] && arr[i][2]==arr[i][1])return "Winner "+arr[i][0];
+            if(arr[0][i]!='-' && arr[1][i]==arr[0][i] && arr[2][i]==arr[1][i])return "Winner "+arr[0][i];
+        }
+        if(arr[0][0]!='-' && arr[1][1]==arr[0][0] && arr[2][2]==arr[1][1])return "Winner "+arr[0][0];
+        if(arr[0][2]!='-' && arr[1][1]==arr[0][2] && arr[2][0]==arr[1][1])return "Winner "+arr[0][2];
+
+    return "No Winner!";
+    }
+    public static void main(String args[]){
+        char[][] arr={
+            {'X','O','X'},
+            {'O','O','O'},
+            {'O','X','X'}
+        };
+        System.out.println(winner(arr));
+    }
+}*/
+
+
