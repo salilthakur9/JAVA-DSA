@@ -2363,6 +2363,45 @@ public class JavaBasics {
         }
     }
 
+    public void insert(int key, int data){
+        Node newnode, current=head;
+        int flag=0;
+        while(current!=null){
+            if(current.rollno==key){
+                flag=1;
+                newnode=new Node(data);
+                newnode.next=current.next;
+                current.next=newnode;
+                current=newnode;
+                break;
+            }current=current.next;
+        }if(flag==0){
+            System.out.println("Node not found!");
+        }
+    }
+
+    public void delete(int key){
+        Node current,temp;
+        current=head;
+        int flag=0;
+        if(current.rollno==key){
+            head=current.next;
+        }else{
+            temp=current.next;
+            while(temp!=null){
+                if(temp.rollno==key){
+                    current.next=temp.next;
+                    flag=1;
+                    break;
+                }current=temp;
+                temp=temp.next;
+            }if(flag==0){
+                System.out.println("Node not found");
+            }
+        }
+    }
+
+
     public static void main(String[] args) {
         JavaBasics list = new JavaBasics();
         list.display();
@@ -2372,9 +2411,54 @@ public class JavaBasics {
         list.addNode(3);
         list.addNode(4);
         list.addNode(5);
+        list.insert(3, 10);
+        list.delete(4);
 
         list.display();
     }
 }*/
+
+
+
+/*import java.util.Scanner;
+public class JavaBasics{
+    public static int average(int arr[]){
+        int total=0;
+        for(int i=0;i<arr.length;i++){
+            total+=arr[i];
+        }
+        int avg=(total)/arr.length;
+        return avg;
+    }
+    public static int highest(int arr[]){
+        int high=Integer.MIN_VALUE;
+        for(int num:arr){
+            if(num>high){
+                high=num;
+            }
+        }return high;
+    }
+    public static int lowest(int arr[]){
+        int low=Integer.MAX_VALUE;
+        for(int num:arr){
+            if(low>num){
+                low=num;
+            }
+        }return low;
+    }
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter the number marks u want to add: ");
+        int N=sc.nextInt();
+        int[] arr=new int[N];
+        for(int i=0;i<N;i++){
+            arr[i]=sc.nextInt();
+        }
+        System.out.println("The avg marks here are: "+average(arr));
+        System.out.println("The highest marks in the given are: "+highest(arr));
+        System.out.println("The Lowest marks here are: "+lowest(arr));
+    }
+}*/
+
 
 
