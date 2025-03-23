@@ -2705,3 +2705,22 @@ public class JavaBasics{
         System.out.println(sb.reverse());
     }
 }*/
+
+
+
+/*import java.util.Scanner;
+public class JavaBasics{
+    public static boolean check(String str){
+        StringBuilder sb=new StringBuilder(str);
+        return sb.reverse().toString().equals(str);
+    }
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        String str=sc.nextLine();
+        if(check(str)){
+            System.out.println("This is palindrome!");
+        }else{
+            System.out.println("This is not a palindrome!");
+        }
+    }
+}*/
