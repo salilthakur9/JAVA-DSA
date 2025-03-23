@@ -2615,3 +2615,29 @@ public class JavaBasics{
 
 
 
+/*public class JavaBasics{
+    public static int max_index(int[][] arr){
+        int max_sum=0,maxIndex=Integer.MIN_VALUE;
+        for(int i=0;i<arr.length;i++){
+            int sum=0;
+            for(int j=0;j<arr[i].length;j++){
+                sum+=arr[i][j];
+            }
+            if(sum>max_sum){
+                max_sum=sum;
+                maxIndex=i+1;
+            }
+        }return maxIndex;
+    }
+    public static void main(String args[]){
+        int[][] arr={
+            {10,20,30},
+            {10,30,40},
+            {100,10,20}
+        };
+        System.out.println("The maximax value is in the row: "+max_index(arr));
+    }
+}*/
+
+
+
