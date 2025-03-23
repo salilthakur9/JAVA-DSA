@@ -2697,3 +2697,11 @@ public class JavaBasics{
 
 
 
+/*public class JavaBasics{
+    public static void main(String args[]){
+        String str="Salil Thakur";
+        StringBuilder sb=new StringBuilder(str);
+        System.out.println(sb);
+        System.out.println(sb.reverse());
+    }
+}*/
