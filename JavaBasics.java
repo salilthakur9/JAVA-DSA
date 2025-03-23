@@ -2672,3 +2672,17 @@ public class JavaBasics{
         System.out.print("The maximum sum is in the row: "+max_index(arr));
     }
 }*/
+
+
+/*public class JavaBasics{
+    public static void main(String args[]){
+        String str="Salil";
+        System.out.println(str);
+        str=str.concat(" Thakur");
+        System.out.println(str);
+        System.out.println(str.replace("Thakur","THAKUR"));
+    }
+}*/
+
+
+
