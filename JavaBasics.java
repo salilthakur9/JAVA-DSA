@@ -2641,3 +2641,34 @@ public class JavaBasics{
 
 
 
+/*import java.util.Scanner;
+public class JavaBasics{
+    public static int max_index(int[][] arr){
+        int max_sum=0,index=Integer.MIN_VALUE;
+        for(int i=0;i<arr.length;i++){
+            int sum=0;
+            for(int j=0;j<arr.length;j++){
+                sum+=arr[i][j];
+            }if(sum>max_sum){
+                max_sum=sum;
+                index=i+1;
+            }
+        }return index;
+    }
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter the number of rows: ");
+        int rows=sc.nextInt();
+        System.out.print("Enter the number of cols: ");
+        int cols=sc.nextInt();
+
+        int[][] arr=new int[rows][cols];
+
+        for(int i=0;i<rows;i++){
+            for(int j=0;j<cols;j++){
+                arr[i][j]=sc.nextInt();
+            }
+        }
+        System.out.print("The maximum sum is in the row: "+max_index(arr));
+    }
+}*/
