@@ -113,3 +113,26 @@ class classes{
         sc.close();
     }
 }*/
+
+
+
+/*class Dog{
+    void eat(String food){
+        System.out.println("Dog eats "+food);
+    }
+}
+class Dog2 extends Dog{
+    void bark(String sound){
+        System.out.println("Dog sounds "+sound);
+    }
+}
+class classes{
+    public static void main(String args[]){
+        Dog2 d2=new Dog2();
+        d2.eat("chips");
+        d2.bark("bhow bhow");
+    }
+}*/
+
+
+
