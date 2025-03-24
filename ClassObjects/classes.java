@@ -50,3 +50,36 @@ public class classes{
         sc.close();
     }
 }*/
+
+
+
+/*import java.util.Scanner;
+class student{
+    public String fname;
+    private String lname;
+    protected String FullName;
+
+    student(String fn, String ln){
+        this.fname=fn;
+        this.lname=ln;
+    }
+
+    void display(){
+        System.out.println("The frist name: "+fname);
+        System.out.println("The last name: "+lname);
+        System.out.println("The full name: "+fname+" "+lname);
+    }
+}
+class classes{
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        String FName=sc.nextLine();
+        String LName=sc.nextLine();
+
+        student st=new student(FName, LName);
+        st.display();
+        sc.close();
+    }
+}*/
+
+
