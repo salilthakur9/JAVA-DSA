@@ -1116,3 +1116,152 @@ public class linkListClass {
 		dl.search(100);
 	}  
 }*/
+
+
+
+public class linkListClass
+{
+	class Node
+	{
+		int rollno;
+		Node next;
+		public Node(int rollno)
+		{
+			this.rollno=rollno;
+		}
+	}
+	
+	public Node head=null;
+	public Node tail=null;
+	
+	public void addNode(int data)
+	{
+		Node newnode=new Node(data);
+		
+		if (head==null)
+		{
+			head=newnode;
+			tail=newnode;
+			newnode.next=head;
+		}
+		else
+		{
+			tail.next=newnode;
+			
+			tail=newnode;
+			
+			tail.next=head;
+		}
+	}
+	
+	public void insertNode(int key,int data)
+	{
+		int flag=0;
+		Node current=head;
+		Node newnode;
+		do
+		{
+			if (current.rollno==key)
+			{
+				newnode=new Node(data);
+				newnode.next=current.next;
+				current.next=newnode;
+				current=newnode;
+				flag=1;
+				break;
+			}
+			current=current.next;
+		} while(current!=head);
+		if (flag==0)
+		{
+			System.out.println("Node not found");
+		}
+	}
+	public void display()
+	{
+		Node current=head;
+		if (head==null)
+		{
+			System.out.println("Empty circular linked list");
+		}
+		else
+		{
+			System.out.println("Nodes of the circular linked list ");
+			do
+			{
+				System.out.print(current.rollno+" ");
+				current=current.next;
+			} while (current!=head);
+			System.out.println();
+		}
+	}
+	
+	public void countNodes()
+	{
+		int count=0;
+		if (head==null)
+		{
+			System.out.println("Empty circular linked list");
+		}
+		else
+		{
+			Node current=head;
+			do
+			{
+				count++;
+				current=current.next;
+			} while (current!=head);
+			System.out.println("Number of nodes are "+count);
+		}
+	}
+	
+	public void search(int key)
+	{
+		int flag=0,pos=1;
+		if (head==null)
+		{
+			System.out.println("Empty circular linked list");
+		}
+		else
+		{
+			Node current=head;
+			do
+			{
+				if (current.rollno==key)
+				{
+					flag=1;
+					break;
+				}
+				pos++;
+				current=current.next;
+			} while (current!=head);
+			if (flag==1)
+			{
+				System.out.println("Element found at position "+pos);
+			}
+			else
+			{
+				System.out.println("Element not found");
+			}
+		}
+	}
+	
+	public static void main(String[] args)
+	{
+		linkListClass cl=new linkListClass();
+		cl.display();
+		//Adds data to the list
+		cl.addNode(21);
+		cl.addNode(15);
+		cl.addNode(48);
+		cl.addNode(39);
+			
+		cl.display();
+		cl.countNodes();
+		cl.insertNode(15,100);
+		cl.display();
+		cl.countNodes();
+		cl.search(48);
+		cl.search(75);
+	}
+}
