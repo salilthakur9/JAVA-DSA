@@ -2743,3 +2743,32 @@ public class JavaBasics{
         System.out.println(count+ " Words are there.");
     }
 }*/
+
+
+
+
+/*class BankAccount{
+    private int balance=1000;
+    void deposit(int amount){
+        balance+=amount;
+        System.out.println("The amount deposited! new balance: "+balance);
+    }
+    void withdraw(int amount){
+        if(amount>balance){
+            System.out.println("insufficient balance!");
+        }else{
+        balance-=amount;
+        System.out.println("The amount deducted! new balance is "+balance);
+        }
+    }
+}
+public class JavaBasics{
+    public static void main(String args[]){
+        BankAccount bk=new BankAccount();
+        bk.deposit(500);
+        bk.withdraw(500);
+    }
+}*/
+
+
+
