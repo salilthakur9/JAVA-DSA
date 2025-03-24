@@ -1119,7 +1119,7 @@ public class linkListClass {
 
 
 
-public class linkListClass
+/*public class linkListClass
 {
 	class Node
 	{
@@ -1250,7 +1250,6 @@ public class linkListClass
 	{
 		linkListClass cl=new linkListClass();
 		cl.display();
-		//Adds data to the list
 		cl.addNode(21);
 		cl.addNode(15);
 		cl.addNode(48);
@@ -1258,10 +1257,10 @@ public class linkListClass
 			
 		cl.display();
 		cl.countNodes();
-		cl.insertNode(15,100);
+		cl.insertNode(3,100);
 		cl.display();
 		cl.countNodes();
 		cl.search(48);
 		cl.search(75);
 	}
-}
+}*/
