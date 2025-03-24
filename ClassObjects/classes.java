@@ -83,3 +83,33 @@ class classes{
 }*/
 
 
+
+/*import java.util.Scanner;
+class Student{
+    String name;
+    int rollno;
+    Student(String n,int r){
+        this.name=n;
+        this.rollno=r;
+    }
+    Student(Student s){
+        this.name=s.name;
+        this.rollno=s.rollno;
+    }
+    void display(){
+        System.out.println(name+", having "+rollno+" Roll number!");
+    }
+}
+class classes{
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        String Name=sc.nextLine();
+        int Rollno=sc.nextInt();
+
+        Student st1=new Student(Name, Rollno);
+        Student st2=new Student(st1);
+        st1.display();
+        st2.display();
+        sc.close();
+    }
+}*/
