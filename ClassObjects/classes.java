@@ -136,3 +136,24 @@ class classes{
 
 
 
+/*class class1{
+    String name;
+    class1(String s){
+        this.name=s;
+        System.out.println("The name is: "+s);
+    }
+}
+class class2 extends class1{
+    int rollno;
+    class2(int r,String s){
+        super(s);
+        this.rollno=r;
+        System.out.println("The roll number is: "+r);
+    }
+}
+class classes{
+    public static void main(String args[]){
+        class1 c1=new class1("Salil");
+        class2 c2=new class2(10,"Thakur");
+    }
+}*/
