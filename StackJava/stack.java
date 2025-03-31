@@ -46,3 +46,25 @@ public class stack {
 
 
 
+/*import java.util.LinkedList;
+import java.util.Stack;
+public class stack {
+    public static void main(String[] args) {
+        LinkedList<String> ll = new LinkedList<>();
+        Stack<String> st = new Stack<>();
+        ll.add("Rajpura");
+        ll.add("Chandigarh");
+        ll.add("Mohali");
+        ll.add("delhi");
+        ll.add("abc");
+        ll.add("efg");
+        ll.add("xyz");
+        while (!ll.isEmpty()) {
+            st.push(ll.poll());
+        }
+        System.out.println("Linked list in reverse order");
+        while (!st.isEmpty()) {
+            System.out.print(st.pop() + " ");
+        }
+    }
+}*/
