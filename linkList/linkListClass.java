@@ -1453,3 +1453,38 @@ class linkListClass{
 
 
 
+/*class Node{
+    int data;
+    Node next;
+    Node(int data){
+        this.data=data;
+        this.next=null;
+    }
+}
+public class linkListClass{
+    Node head;
+    void traverse(){
+        Node temp=head;
+        while(temp!=null){
+            System.out.print(temp.data+" -> ");
+            temp=temp.next;
+        }System.out.print("Null");
+    }
+    void addHead(int newData){
+        Node newNode=new Node(newData);
+        newNode.next=head;
+        head=newNode;
+    }
+    public static void main(String args[]){
+        linkListClass ll=new linkListClass();
+        ll.traverse();
+        System.out.println();
+        ll.head=new Node(10);
+        ll.head.next=new Node(20);
+        ll.head.next.next=new Node(30);
+        ll.traverse();
+        System.out.println();
+        ll.addHead(0);
+        ll.traverse();
+    }
+}*/
