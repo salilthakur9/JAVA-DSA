@@ -1421,3 +1421,35 @@ public class linkListClass{
         System.out.println("Stack size after pop is: "+st.size());
     }
 }*/
+
+
+
+/*class Node{
+    int data;
+    Node next;
+
+    Node(int data){
+        this.data=data;
+        this.next=null;
+    }
+}
+class linkListClass{
+    Node head;
+    void traverse(){
+        Node temp=head;
+        while(temp!=null){
+            System.out.print(temp.data+" -> ");
+            temp=temp.next;
+        }System.out.println("Null");
+    }
+    public static void main(String args[]){
+        linkListClass ll=new linkListClass();
+        ll.head=new Node(10);
+        ll.head.next=new Node(20);
+        ll.head.next.next=new Node(20);
+        ll.traverse();
+    }
+}*/
+
+
+
