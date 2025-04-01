@@ -1488,3 +1488,65 @@ public class linkListClass{
         ll.traverse();
     }
 }*/
+
+
+
+
+/*class Node{
+    String data;
+    Node next;
+
+    Node(String data){
+        this.data=data;
+        this.next=null;
+    }
+}
+public class linkListClass{
+    Node head;
+    void traverse(){
+        Node temp=head;
+        while(temp!=null){
+            System.out.print(temp.data+" -> ");
+            temp=temp.next;
+        }System.out.print("Null");
+    }
+
+    void addAtStart(String newData){
+        Node newNode=new Node(newData);
+        newNode.next=head;
+        head=newNode;
+    }
+
+    void addAtLast(String newData){
+        Node newNode=new Node(newData);
+        if(head==null){
+            head=newNode;
+            return;
+        }
+        Node temp=head;
+        while(temp!=null){
+            temp=temp.next;
+        }
+        temp=newNode;
+    }
+
+    void addAtPosition(String newData, int position){
+        Node newNode=new Node(newData);
+        if(position==1){
+            newNode.next=head;
+            head=newNode;
+            return;
+        }
+    }
+    public static void main(String args[]){
+        linkListClass ll=new linkListClass();
+        ll.traverse();System.out.println();
+        ll.head=new Node("Salil ");
+        ll.head.next=new Node("Thakur");
+        ll.traverse();System.out.println();
+        ll.addAtStart("Mr. ");
+        ll.traverse();
+        ll.addAtLast("!!!!");
+        ll.traverse();
+    }
+}*/
