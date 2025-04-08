@@ -2772,3 +2772,247 @@ public class JavaBasics{
 
 
 
+/*import java.util.*;
+
+// Patient class with basic information
+class Patient {
+    int id;
+    String name;
+    int age;
+    String disease;
+
+    public Patient(int id, String name, int age, String disease) {
+        this.id = id;
+        this.name = name;
+        this.age = age;
+        this.disease = disease;
+    }
+
+    public void display() {
+        System.out.println("ID: " + id + ", Name: " + name + ", Age: " + age + ", Disease: " + disease);
+    }
+}
+
+// Node for LinkedList
+class Node {
+    Patient patient;
+    Node next;
+
+    public Node(Patient patient) {
+        this.patient = patient;
+        this.next = null;
+    }
+}
+
+// LinkedList to store patient records
+class PatientList {
+    Node head;
+
+    // Create
+    public void addPatient(Patient patient) {
+        Node newNode = new Node(patient);
+        if (head == null) {
+            head = newNode;
+        } else {
+            Node temp = head;
+            while (temp.next != null)
+                temp = temp.next;
+            temp.next = newNode;
+        }
+        System.out.println("Patient added successfully.");
+    }
+
+    // Read
+    public void displayPatients() {
+        if (head == null) {
+            System.out.println("No patients found.");
+            return;
+        }
+        Node temp = head;
+        while (temp != null) {
+            temp.patient.display();
+            temp = temp.next;
+        }
+    }
+
+    // Update
+    public void updatePatient(int id, String newName, int newAge, String newDisease) {
+        Node temp = head;
+        while (temp != null) {
+            if (temp.patient.id == id) {
+                temp.patient.name = newName;
+                temp.patient.age = newAge;
+                temp.patient.disease = newDisease;
+                System.out.println("Patient updated successfully.");
+                return;
+            }
+            temp = temp.next;
+        }
+        System.out.println("Patient not found.");
+    }
+
+    // Delete
+    public void deletePatient(int id) {
+        if (head == null) {
+            System.out.println("List is empty.");
+            return;
+        }
+
+        if (head.patient.id == id) {
+            head = head.next;
+            System.out.println("Patient deleted.");
+            return;
+        }
+
+        Node prev = head;
+        Node curr = head.next;
+        while (curr != null) {
+            if (curr.patient.id == id) {
+                prev.next = curr.next;
+                System.out.println("Patient deleted.");
+                return;
+            }
+            prev = curr;
+            curr = curr.next;
+        }
+
+        System.out.println("Patient not found.");
+    }
+
+    // Search
+    public void searchPatientByName(String name) {
+        Node temp = head;
+        boolean found = false;
+        while (temp != null) {
+            if (temp.patient.name.equalsIgnoreCase(name)) {
+                temp.patient.display();
+                found = true;
+            }
+            temp = temp.next;
+        }
+        if (!found)
+            System.out.println("Patient not found.");
+    }
+
+    // Sort (Bubble Sort)
+    public void sortPatientsByName() {
+        if (head == null || head.next == null)
+            return;
+
+        boolean swapped;
+        do {
+            swapped = false;
+            Node temp = head;
+            while (temp.next != null) {
+                if (temp.patient.name.compareTo(temp.next.patient.name) > 0) {
+                    Patient p = temp.patient;
+                    temp.patient = temp.next.patient;
+                    temp.next.patient = p;
+                    swapped = true;
+                }
+                temp = temp.next;
+            }
+        } while (swapped);
+
+        System.out.println("Patients sorted by name.");
+    }
+}
+
+// Queue for appointment booking
+class AppointmentQueue {
+    Queue<Patient> appointments = new LinkedList<>();
+
+    public void bookAppointment(Patient p) {
+        appointments.add(p);
+        System.out.println("Appointment booked for " + p.name);
+    }
+
+    public void viewAppointments() {
+        if (appointments.isEmpty()) {
+            System.out.println("No appointments found.");
+            return;
+        }
+        for (Patient p : appointments) {
+            p.display();
+        }
+    }
+}
+
+// Main class
+public class JavaBasics {
+    static Scanner sc = new Scanner(System.in);
+    static PatientList patientList = new PatientList();
+    static AppointmentQueue appointmentQueue = new AppointmentQueue();
+    static int idCounter = 1;
+
+    public static void main(String[] args) {
+        int choice;
+        do {
+            System.out.println("\n--- Hospital Patient Management System ---");
+            System.out.println("1. Add Patient");
+            System.out.println("2. View All Patients");
+            System.out.println("3. Update Patient");
+            System.out.println("4. Delete Patient");
+            System.out.println("5. Search Patient by Name");
+            System.out.println("6. Sort Patients by Name");
+            System.out.println("7. Book Appointment");
+            System.out.println("8. View Appointments");
+            System.out.println("9. Exit");
+            System.out.print("Enter choice: ");
+            choice = sc.nextInt();
+            sc.nextLine();
+
+            switch (choice) {
+                case 1 -> {
+                    System.out.print("Enter name: ");
+                    String name = sc.nextLine();
+                    System.out.print("Enter age: ");
+                    int age = sc.nextInt();
+                    sc.nextLine();
+                    System.out.print("Enter disease: ");
+                    String disease = sc.nextLine();
+                    patientList.addPatient(new Patient(idCounter++, name, age, disease));
+                }
+                case 2 -> patientList.displayPatients();
+                case 3 -> {
+                    System.out.print("Enter Patient ID to update: ");
+                    int id = sc.nextInt();
+                    sc.nextLine();
+                    System.out.print("Enter new name: ");
+                    String name = sc.nextLine();
+                    System.out.print("Enter new age: ");
+                    int age = sc.nextInt();
+                    sc.nextLine();
+                    System.out.print("Enter new disease: ");
+                    String disease = sc.nextLine();
+                    patientList.updatePatient(id, name, age, disease);
+                }
+                case 4 -> {
+                    System.out.print("Enter Patient ID to delete: ");
+                    int id = sc.nextInt();
+                    patientList.deletePatient(id);
+                }
+                case 5 -> {
+                    System.out.print("Enter name to search: ");
+                    String name = sc.nextLine();
+                    patientList.searchPatientByName(name);
+                }
+                case 6 -> patientList.sortPatientsByName();
+                case 7 -> {
+                    System.out.print("Enter name: ");
+                    String name = sc.nextLine();
+                    System.out.print("Enter age: ");
+                    int age = sc.nextInt();
+                    sc.nextLine();
+                    System.out.print("Enter disease: ");
+                    String disease = sc.nextLine();
+                    Patient p = new Patient(idCounter++, name, age, disease);
+                    appointmentQueue.bookAppointment(p);
+                }
+                case 8 -> appointmentQueue.viewAppointments();
+                case 9 -> System.out.println("Exiting...");
+                default -> System.out.println("Invalid choice!");
+            }
+        } while (choice != 9);
+    }
+}*/

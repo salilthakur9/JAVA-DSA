@@ -1,4 +1,4 @@
-import java.util.Scanner;
+/*import java.util.Scanner;
 public class insertion {
     public static void insertion_sort(int arr[], int n){
         for(int i=0;i<n;i++){
@@ -24,4 +24,4 @@ public class insertion {
         }
         sc.close();
     }
-}
+}*/
