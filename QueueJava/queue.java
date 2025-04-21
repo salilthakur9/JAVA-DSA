@@ -164,3 +164,30 @@ public class queue {
         System.out.println("Deque: " + deque);
 	} 
 }*/
+
+
+
+/*import java.util.*;
+public class queue{
+    public static void main(String args[]){
+        String name;
+        int i,len,flag=0;
+        Deque<Character> dq=new LinkedList<>();
+        System.out.println("Enter the String: ");
+        Scanner sc=new Scanner(System.in);
+        name =sc.nextLine();
+        for(i=0;i<name.length();i++){
+            dq.add(name.charAt(i));
+        }
+        while(dq.size()>1){
+            if(dq.removeFirst()!=dq.removeLast()){
+                flag=1;break;
+            }
+        }
+        if(flag==1){
+            System.out.println("String is not palindrome!");
+        }else{
+            System.out.println("String is palindrome!");
+        }
+    }
+}*/
