@@ -191,3 +191,26 @@ public class queue{
         }
     }
 }*/
+
+
+
+/*import java.util.*;
+
+public class queue {
+    public static void main(String args[]) {
+        PriorityQueue<Integer> pq = new PriorityQueue<>();
+
+        pq.add(10);
+        pq.add(1);
+        pq.add(3);
+        pq.add(50);
+
+        System.out.println("Polled element: " + pq.poll());
+        System.out.println("Peeked element: " + pq.peek());
+
+        System.out.println("Remaining elements in ascending order:");
+        while (!pq.isEmpty()) {
+            System.out.println(pq.poll());
+        }
+    }
+}*/
