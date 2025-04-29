@@ -140,3 +140,59 @@ public class tree{
         postOrder(root); 
     }
 }*/
+
+
+
+
+/*import java.util.*;
+class Node{
+    int key;
+    Node left, right;
+
+    public Node(int item){
+        key=item;
+        left=null;
+        right=null;
+    }
+}
+
+public class tree{
+    static Node root;
+    public tree(){
+        root=null;
+    }
+    public Node insert(Node root, int key){
+        if(root==null){
+            root=new Node(key);
+            return root;
+        }
+        if(key<root.key)root.left=insert(root.left, key);
+        else if(key>root.key)root.right=insert(root.right, key);
+
+        return root;
+    }
+    public int findMin(Node root){
+        if(root==null)throw new IllegalStateException("The tree is empty!");
+        if(root.left==null)return root.key;
+
+        return findMin(root.left);
+    }
+    public int findMax(Node root){
+        if(root==null)throw new IllegalStateException("The tree is empty!");
+        if(root.right==null)return root.key;
+
+        return findMax(root.right);
+    }
+
+    public static void main(String args[]){
+        tree t=new tree();
+        int arr[]={10,20,30,45,70};
+        int i;
+        root=new Node(arr[0]);
+        for(i=1;i<arr.length;i++){
+            t.insert(root, arr[i]);
+        }
+        System.out.println("Minimum value: "+t.findMin(root));
+        System.out.println("Maximum value: "+t.findMax(root));
+    }
+}*/
