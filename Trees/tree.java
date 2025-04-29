@@ -1,4 +1,4 @@
-class Node
+/*class Node
 {
 	char key;
 	Node left;
@@ -68,4 +68,75 @@ class tree
 		System.out.println("Postorder traversal: ");
 		tree.postorderTraversal(tree.root);
 	}
+}*/
+
+
+/*import java.util.*;
+class treeNode {
+    int data;
+    treeNode left, right;
+
+    public treeNode(int value) {
+        data = value;
+        left = right = null;
+    }
 }
+public class tree{
+    public static void inOrder(treeNode root) {
+        if (root != null) {
+            inOrder(root.left);
+            System.out.print(root.data + " ");
+            inOrder(root.right);
+        }
+    }
+    public static void preOrder(treeNode root) {
+        if (root != null) {
+            System.out.print(root.data + " ");
+            preOrder(root.left);
+            preOrder(root.right);
+        }
+    }
+    public static void postOrder(treeNode root) {
+        if (root != null) {
+            postOrder(root.left);
+            postOrder(root.right);
+            System.out.print(root.data + " ");
+        }
+    }
+    public static treeNode insert(treeNode root, int value) {
+        if (root == null) {
+            return new treeNode(value);
+        }
+        Queue<treeNode> queue = new LinkedList<>();
+        queue.add(root);
+        while (!queue.isEmpty()) {
+            treeNode current = queue.poll();
+            if (current.left == null) {
+                current.left = new treeNode(value);
+                break;
+            } else {
+                queue.add(current.left);
+            }
+            if (current.right == null) {
+                current.right = new treeNode(value);
+                break;
+            } else {
+                queue.add(current.right);
+            }
+        }
+        return root;
+    }
+    public static void main(String[] args) {
+        int[] arr = {80, 60, 90, 10, 70, 85, 110};
+        treeNode root = null;
+        for (int val : arr) {
+            root = insert(root, val);
+        }
+        System.out.println("In-order Traversal:");
+        inOrder(root);
+        System.out.println("\nPre-order Traversal:");
+        preOrder(root);
+        System.out.println("\nPost-order Traversal:");
+        postOrder(root); 
+    }
+}*/
