@@ -144,7 +144,7 @@ public class tree{
 
 
 
-/*import java.util.*;
+import java.util.*;
 class Node{
     int key;
     Node left, right;
@@ -183,16 +183,27 @@ public class tree{
 
         return findMax(root.right);
     }
+    public int height(Node node){
+        if(node==null){
+            return -1;
+        }else{
+            int leftHeight=height(node.left);
+            int rightHeight=height(node.right);
+
+            return Math.max(leftHeight, rightHeight)+1;
+        }
+    }
 
     public static void main(String args[]){
         tree t=new tree();
-        int arr[]={10,20,30,45,70};
+        int arr[]={5,4};
         int i;
         root=new Node(arr[0]);
         for(i=1;i<arr.length;i++){
             t.insert(root, arr[i]);
         }
-        System.out.println("Minimum value: "+t.findMin(root));
-        System.out.println("Maximum value: "+t.findMax(root));
+        // System.out.println("Minimum value: "+t.findMin(root));
+        // System.out.println("Maximum value: "+t.findMax(root));
+        System.out.println("Height of the Tree is: "+t.height(root));
     }
-}*/
+}
