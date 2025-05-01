@@ -193,10 +193,36 @@ public class tree{
             return Math.max(leftHeight, rightHeight)+1;
         }
     }
+    public int countLeafNodes(Node node){
+        if(node==null){
+            return 0;
+        }
+        if(node.left==null &&node.right==null){
+            return 1;
+        }
+        else{
+            return countLeafNodes(node.left)+countLeafNodes(node.right);
+        }
+    }
+    public void printLeafNodes(Node node){
+        if(node==null){
+            return;
+        }
+        if(node.left==null && node.right==null){
+            System.out.print(node.key+" ");
+            return;
+        }
+        if(node.left!=null){
+            printLeafNodes(node.left);
+        }
+        if(node.right!=null){
+            printLeafNodes(node.right);
+        }
+    }
 
     public static void main(String args[]){
         tree t=new tree();
-        int arr[]={5,4};
+        int arr[]={80,60,90,10,70,85,110};
         int i;
         root=new Node(arr[0]);
         for(i=1;i<arr.length;i++){
@@ -204,6 +230,9 @@ public class tree{
         }
         // System.out.println("Minimum value: "+t.findMin(root));
         // System.out.println("Maximum value: "+t.findMax(root));
-        System.out.println("Height of the Tree is: "+t.height(root));
+        //System.out.println("Height of the Tree is: "+t.height(root));
+        System.out.println("Number of leaf Nodes are: "+t.countLeafNodes(root));
+        System.out.println("Leaf Nodes are: ");
+        t.printLeafNodes(root);
     }
 }
