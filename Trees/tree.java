@@ -257,3 +257,50 @@ public class tree{
         t.levelOrder(root);
     }
 }*/
+
+
+
+/*import java.util.*;
+class Node{
+    int data;
+    Node left, right;
+
+    Node(int data){
+        this.data=data;
+        left=right=null;
+    }
+}
+
+public class tree{
+    public static List<Integer> preOrder(Node root){
+        List<Integer> res=new ArrayList<>();
+        if(root==null){
+            return res;
+        }
+
+        Stack<Node> stk=new Stack<>();
+        stk.push(root);
+
+        while(!stk.isEmpty()){
+            Node curr=stk.pop();
+            res.add(curr.data);
+            if(curr.right!=null)stk.push(curr.right);
+            if(curr.left!=null)stk.push(curr.left);
+        }
+        return res;
+    }
+    public static void main(String args[]){
+        Node root=new Node(1);
+        root.left=new Node(2); 
+        root.right=new Node(3); 
+        root.left.left=new Node(4); 
+        root.left.right=new Node(5); 
+        root.right.right=new Node(6);
+
+        List<Integer> preorder=preOrder(root);
+
+        for(int val:preorder){
+            System.out.print(val+" ");
+        }System.out.println();
+    }
+}*/
