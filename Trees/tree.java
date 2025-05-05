@@ -144,7 +144,7 @@ public class tree{
 
 
 
-import java.util.*;
+/*import java.util.*;
 class Node{
     int key;
     Node left, right;
@@ -220,9 +220,28 @@ public class tree{
         }
     }
 
+    public void levelOrder(Node node){
+        if(node==null){
+            return;
+        }
+        Queue<Node> qu=new LinkedList<>();
+        qu.add(node);
+        while(!qu.isEmpty()){
+            Node current=qu.poll();
+            System.out.print(current.key+" ");
+            if(current.left!=null){
+                qu.add(current.left);
+            }
+            if(current.right!=null){
+                qu.add(current.right);
+            }
+        }
+    }
+
     public static void main(String args[]){
         tree t=new tree();
-        int arr[]={80,60,90,10,70,85,110};
+        int arr[]={5,4,3,2,1};
+        //{80,90, 60, 110,70,10,85};
         int i;
         root=new Node(arr[0]);
         for(i=1;i<arr.length;i++){
@@ -231,8 +250,10 @@ public class tree{
         // System.out.println("Minimum value: "+t.findMin(root));
         // System.out.println("Maximum value: "+t.findMax(root));
         //System.out.println("Height of the Tree is: "+t.height(root));
-        System.out.println("Number of leaf Nodes are: "+t.countLeafNodes(root));
-        System.out.println("Leaf Nodes are: ");
-        t.printLeafNodes(root);
+        // System.out.println("Number of leaf Nodes are: "+t.countLeafNodes(root));
+        // System.out.println("Leaf Nodes are: ");
+        // t.printLeafNodes(root);
+        System.out.println("Level ordered: ");
+        t.levelOrder(root);
     }
-}
+}*/
