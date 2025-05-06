@@ -304,3 +304,62 @@ public class tree{
         }System.out.println();
     }
 }*/
+
+
+
+/*import java.util.*;
+class Node{
+    int data;
+    Node left,right;
+
+    Node(int data){
+        this.data=data;
+        left=right=null;
+    }
+}
+public class tree{
+    Node root;
+
+    public tree(){
+        root=null;
+    }
+
+    public void nonleafNodes(){
+        if(root==null){
+            return;
+        }
+        Queue<Node> qu=new LinkedList<>();
+        Queue<Node> qu1=new LinkedList<>();
+        qu.add(root);
+
+        while(!qu.isEmpty()){
+            Node current=qu.poll();
+            if(current.left!=null || current.right!=null){
+                qu1.add(current);
+            }
+            if(current.left!=null){
+                qu.add(current.left);
+            }
+            if(current.right!=null){
+                qu.add(current.right);
+            }
+        }
+        System.out.println("Number of non leaf nodes are: "+qu1.size());
+        System.out.print("Non leaf nodes are: ");
+        while(!qu1.isEmpty()){
+            System.out.print(qu1.poll().data+" ");
+        }System.out.println();
+    }
+
+    public static void main(String args[]){
+        tree t=new tree();
+        t.root=new Node(1);
+        t.root.left=new Node(2);
+        t.root.right=new Node(3);
+        t.root.left.left=new Node(4);
+        t.root.left.right=new Node(5);
+        t.root.right.right=new Node(6);
+
+        t.nonleafNodes();
+    }
+}*/
