@@ -3016,3 +3016,221 @@ public class JavaBasics {
         } while (choice != 9);
     }
 }*/
+
+
+
+/*import java.util.*;
+
+// Book model
+class Book {
+    int id;
+    String title, author;
+    int quantity;
+    int issuedCount;
+
+    Book(int id, String title, String author, int quantity) {
+        this.id = id;
+        this.title = title;
+        this.author = author;
+        this.quantity = quantity;
+        this.issuedCount = 0;
+    }
+}
+
+// BST Node for sorted display
+class BookBST {
+    static class TreeNode {
+        Book book;
+        TreeNode left, right;
+
+        TreeNode(Book book) {
+            this.book = book;
+        }
+    }
+
+    TreeNode root;
+
+    void insert(Book book) {
+        root = insertRec(root, book);
+    }
+
+    private TreeNode insertRec(TreeNode root, Book book) {
+        if (root == null) return new TreeNode(book);
+        if (book.id < root.book.id)
+            root.left = insertRec(root.left, book);
+        else if (book.id > root.book.id)
+            root.right = insertRec(root.right, book);
+        return root;
+    }
+
+    void inorder() {
+        inorderRec(root);
+    }
+
+    private void inorderRec(TreeNode root) {
+        if (root != null) {
+            inorderRec(root.left);
+            System.out.println("ID: " + root.book.id + ", Title: " + root.book.title +
+                    ", Author: " + root.book.author + ", Quantity: " + root.book.quantity +
+                    ", Issued: " + root.book.issuedCount);
+            inorderRec(root.right);
+        }
+    }
+}
+
+// Main Library System
+class Library {
+    Map<Integer, Book> bookMap = new HashMap<>();
+    BookBST bst = new BookBST();
+    Stack<Book> returnStack = new Stack<>();
+
+    void addBook(int id, String title, String author) {
+        if (bookMap.containsKey(id)) {
+            Book book = bookMap.get(id);
+            book.quantity++;
+            System.out.println("Book already exists. Increased quantity to " + book.quantity);
+        } else {
+            Book book = new Book(id, title, author, 1);
+            bookMap.put(id, book);
+            bst.insert(book);
+            System.out.println("Book added.");
+        }
+    }
+
+    void issueBook(int id) {
+        try {
+            if (!bookMap.containsKey(id)) throw new Exception("Book ID not found.");
+            Book book = bookMap.get(id);
+            if (book.quantity <= 0) throw new Exception("Book not available for issue.");
+            book.quantity--;
+            book.issuedCount++;
+            System.out.println("Issued: " + book.title);
+        } catch (Exception e) {
+            System.out.println("Error: " + e.getMessage());
+        }
+    }
+
+    void returnBook(int id) {
+        try {
+            if (!bookMap.containsKey(id)) throw new Exception("Book ID not found.");
+            Book book = bookMap.get(id);
+            if (book.issuedCount <= 0) throw new Exception("No issued copy available to return.");
+            book.quantity++;
+            book.issuedCount--;
+            returnStack.push(book);
+            System.out.println("Returned: " + book.title);
+        } catch (Exception e) {
+            System.out.println("Error: " + e.getMessage());
+        }
+    }
+
+    void displayBooks() {
+        if (bookMap.isEmpty()) {
+            System.out.println("No books available.");
+        } else {
+            System.out.println("\nAll Books:");
+            for (Book book : bookMap.values()) {
+                System.out.println("ID: " + book.id + ", Title: " + book.title +
+                        ", Author: " + book.author + ", Quantity: " + book.quantity +
+                        ", Issued: " + book.issuedCount);
+            }
+        }
+    }
+
+    void searchBook(int id) {
+        if (bookMap.containsKey(id)) {
+            Book book = bookMap.get(id);
+            System.out.println("Found: " + book.title + ", Quantity: " + book.quantity + ", Issued: " + book.issuedCount);
+        } else {
+            System.out.println("Book not found.");
+        }
+    }
+
+    void showRecentlyReturned() {
+        if (returnStack.isEmpty()) {
+            System.out.println("No recent returns.");
+        } else {
+            Book book = returnStack.peek();
+            System.out.println("Recently Returned: " + book.title + " (ID: " + book.id + ")");
+        }
+    }
+
+    void displayBooksSorted() {
+        System.out.println("\nBooks (Sorted by ID):");
+        bst.inorder();
+    }
+}
+
+// Main class
+public class JavaBasics {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        Library lib = new Library();
+
+        while (true) {
+            System.out.println("\n--- Library Menu ---");
+            System.out.println("1. Add Book");
+            System.out.println("2. Issue Book");
+            System.out.println("3. Return Book");
+            System.out.println("4. Display All Books");
+            System.out.println("5. Display Sorted Books");
+            System.out.println("6. Search Book by ID");
+            System.out.println("7. Show Recently Returned Book");
+            System.out.println("8. Exit");
+
+            System.out.print("Enter your choice: ");
+            int choice;
+            try {
+                choice = sc.nextInt();
+            } catch (InputMismatchException e) {
+                System.out.println("Please enter a valid number.");
+                sc.next(); // clear invalid input
+                continue;
+            }
+
+            switch (choice) {
+                case 1:
+                    try {
+                        System.out.print("Enter Book ID: ");
+                        int id = sc.nextInt();
+                        sc.nextLine(); // clear buffer
+                        System.out.print("Enter Book Title: ");
+                        String title = sc.nextLine();
+                        System.out.print("Enter Author: ");
+                        String author = sc.nextLine();
+                        lib.addBook(id, title, author);
+                    } catch (InputMismatchException e) {
+                        System.out.println("Invalid input. Please try again.");
+                        sc.nextLine(); // clear buffer
+                    }
+                    break;
+                case 2:
+                    System.out.print("Enter Book ID to issue: ");
+                    lib.issueBook(sc.nextInt());
+                    break;
+                case 3:
+                    System.out.print("Enter Book ID to return: ");
+                    lib.returnBook(sc.nextInt());
+                    break;
+                case 4:
+                    lib.displayBooks();
+                    break;
+                case 5:
+                    lib.displayBooksSorted();
+                    break;
+                case 6:
+                    System.out.print("Enter Book ID to search: ");
+                    lib.searchBook(sc.nextInt());
+                    break;
+                case 7:
+                    lib.showRecentlyReturned();
+                    break;
+                case 8:
+                    System.out.println("Exiting...");
+                    return;
+                default:
+                    System.out.println("Invalid choice.");
+            }
+        }
+    }
+}*/
