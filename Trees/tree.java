@@ -366,7 +366,7 @@ public class tree{
 
 
 
-import java.util.*;
+/*import java.util.*;
 class Node{
     int data;
     Node left,right;
@@ -401,4 +401,4 @@ class tree{
         if(isIdentical(r1, r2)){System.out.println("True!!");}
         else{System.out.println("False!!");}
     }
-}
+}*/
