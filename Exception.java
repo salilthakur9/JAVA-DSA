@@ -65,3 +65,29 @@ class Exception{
         }
     }
 }*/
+
+
+
+/*import java.io.*;
+class Exception{
+    public static void main(String[] args) throws IOException {
+        String r=System.getProperty("user.dir");
+        System.out.println("Current root directory: "+r);
+
+        String p=r+"\\abc.txt";
+        System.out.println("Path  of the file: "+p);
+
+        try {
+            FileReader fr=new FileReader(p);
+            BufferedReader br=new BufferedReader(fr);
+
+            for(int i=0;i<5;i++)
+            System.out.println(br.readLine());
+            fr.close();
+        } catch (FileNotFoundException e) {
+            System.out.println(e.getMessage()+" file not found!!");
+        }catch (IOException e){
+            System.out.println("IO exception is being handled!!");
+        }
+    }
+}*/
