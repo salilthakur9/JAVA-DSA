@@ -91,3 +91,19 @@ class Exception{
         }
     }
 }*/
+
+
+
+/*import java.io.*;
+
+class Exception {
+    public static void main(String[] args) throws IOException {
+        String fn = "output.txt";
+        String c = "hi";
+
+        FileWriter writer = new FileWriter(fn);
+        writer.write(c);
+        writer.close();
+        System.out.println("done! " + fn);
+    }
+}*/
