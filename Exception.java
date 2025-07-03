@@ -107,3 +107,30 @@ class Exception {
         System.out.println("done! " + fn);
     }
 }*/
+
+
+
+/*import java.io.*;
+import java.util.Scanner;
+public class Exception {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String name;
+        try {
+            FileWriter writer = new FileWriter("output.txt");
+            System.out.println("Enter names (enter '0' to stop):");
+            while (true) {
+                System.out.print("Enter name: ");
+                name = sc.nextLine();
+                if (name.equals("0")) {
+                    break;
+                }
+                writer.write(name + "\n");
+            }
+            writer.close();
+            System.out.println("Check output.txt!!");
+        } catch (IOException e) {
+            System.out.println("Error: " + e.getMessage());
+        }
+    }
+}*/
