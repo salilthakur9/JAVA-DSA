@@ -134,3 +134,56 @@ public class Exception {
         }
     }
 }*/
+
+
+
+/*class DivideByZeroException extends RuntimeException{
+    public DivideByZeroException(String m){
+        super(m);
+    }
+}
+class Exception{
+    public static void divide(int a, int b){
+        if(b==0){
+            throw new DivideByZeroException("Division by zero is not allowed!!");
+        }
+        System.out.println("Result: "+(a/b));
+    }
+    public static void main(String args[]){
+        try {
+            divide(10, 1);
+        } catch (DivideByZeroException e) {
+            System.out.println("Caught Exception: "+e.getMessage());
+        }
+    }
+}*/
+
+
+
+/*import java.util.Scanner;
+class notZero extends RuntimeException{
+    public notZero(String s){
+        super(s);
+    }
+}
+class Exception{
+    public static void emi(float amount, float months){
+        if(months==0){
+            throw new notZero("Months cannot be Zero!!");
+        }
+        System.out.println("EMI: "+(amount/months));
+    }
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        Float a=sc.nextFloat();
+        Float m=sc.nextFloat();
+        try {
+            emi(a, m);
+        } catch (notZero e) {
+        System.out.println("Exception caught: "+e.getMessage());
+        }
+    }
+}*/
+
+
+
