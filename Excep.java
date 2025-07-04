@@ -187,3 +187,25 @@ class Exception{
 
 
 
+/*class InvalidAgeException extends Exception {
+    public InvalidAgeException(String m) {
+        super(m);
+    }
+}
+
+public class Excep {
+    public static void validate(int age) throws InvalidAgeException {
+        if (age < 20) {
+            throw new InvalidAgeException("Age is not Valid!!");
+        }
+        System.out.println("Age: " + age);
+    }
+
+    public static void main(String[] args) {
+        try {
+            validate(0);
+        } catch (InvalidAgeException e) {
+            System.out.println("Exception: " + e.getMessage());
+        }
+    }
+}*/
