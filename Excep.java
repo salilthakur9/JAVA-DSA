@@ -209,3 +209,38 @@ public class Excep {
         }
     }
 }*/
+
+
+
+/*import java.util.Scanner;
+import java.io.*;
+class Excep{
+public static void main(String args[]){
+    Scanner sc=new Scanner(System.in);
+    String name;
+    try {
+        FileWriter fw=new FileWriter("output.txt");
+         System.out.println("Enter names (enter '0' to stop):");
+            while (true) {
+                System.out.print("Enter name: ");
+                name = sc.nextLine();
+                if (name.equals("0")) {
+                    break;
+                }
+                StringBuilder sb= new StringBuilder(name);
+                String new_name= sb.reverse().toString();
+                if(name.equals(new_name)){
+                    fw.write(name+" Palindrome" + "\n");
+                }else{
+                    fw.write(name+" Not Palindrome"+"\n");
+                }
+            }
+            fw.close();
+            System.out.println("Check output.txt!!");
+    } catch (IOException e) {
+        System.out.println("Esception Caught: "+e.getMessage());
+    }finally{
+        sc.close();
+    }
+}
+}*/
