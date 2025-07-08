@@ -294,3 +294,93 @@ public class Excep{
         op.display("Sir");
     }
 }*/
+
+
+
+// interface TwoParameter{
+//     void maximum(int a,int b);
+// }
+// public class first{
+//     public static void main(String[] args) {
+//         TwoParameter op=(a,b)-> {
+//             if(a>b) 
+//             System.out.println("Greatest of two is:"+a); 
+//             else 
+//             System.out.println("Greatest of two is:"+b);
+//         };
+    
+//         op.maximum(2,3);
+//     }
+// }
+
+
+
+
+
+
+
+
+// interface TwoParameter{
+//     void maximum(int a,int b,int c);
+// }
+// public class first{
+//     public static void main(String[] args) {
+//         TwoParameter op=(a,b,c)-> {
+//             if(a>b && a>c) 
+//             System.out.println("Greatest of three is:"+a); 
+//             else if(b>a && b>c)
+//             System.out.println("Greatest of three is:"+b);
+//             else
+//             System.out.println("Greatest of three is:"+c);
+//         };
+    
+//         op.maximum(8,3,4);
+//     }
+// }
+
+
+
+
+
+
+
+
+
+/*interface OneParameter{
+    void display(String str);
+}
+public class first{
+    public static void main(String[] args) {
+        OneParameter op=(name)->{
+            int count=0;
+            for(int i=0;i<name.length();i++){
+                count++;
+
+            }
+            System.out.println("Length of string is:"+count);
+        };
+        op.display("Shivansh");
+    }
+}*/
+
+
+
+/*class first{
+    public static void main(String args[]){
+        new Thread(()->System.out.println("New thread created")).start();
+    }
+}*/
+
+
+
+/*interface Square{
+    int calculate(int x);
+}
+public class first{
+    public static void main(String[] args) {
+        int a=3;
+        Square sq=(int x)->x*x;
+        int ans=sq.calculate(a);
+        System.out.println("Square of number is:"+ans);
+    }
+}*/
