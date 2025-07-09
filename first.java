@@ -467,3 +467,23 @@ public class first{
         System.out.println("Even Numbers: "+up_str);
     }
 }*/
+
+
+
+/*import java.util.*;
+import java.util.stream.Collectors;
+public class first{
+    public static void main(String[] args) {
+        ArrayList<Integer> marks=new ArrayList<Integer>();
+        marks.add(10);
+        marks.add(20);
+        marks.add(30);
+        marks.add(40);
+        marks.add(50);
+
+        System.out.println("Marks of students before grace: "+marks);
+        List<Integer> updatedmarks=marks.stream().map(i->i+5).collect(Collectors.toList());
+
+        System.out.println("Marks of students after grace: "+updatedmarks);
+    }
+}*/
