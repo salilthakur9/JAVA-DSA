@@ -384,3 +384,32 @@ public class first{
         System.out.println("Square of number is:"+ans);
     }
 }*/
+
+
+
+/*import java.util.*;
+public class first{
+    public static void main(String args[]){
+        List<String> names=new ArrayList<>(Arrays.asList("Python","java","C"));
+        names.forEach(name->System.out.println(name));
+    }
+}*/
+
+/*import java.util.*;
+public class first{
+    public static void main(String args[]){
+        List<String> names=new ArrayList<>(Arrays.asList("Python","java","C"));
+        names.forEach(name->System.out.println(name.toUpperCase()));
+    }
+}*/
+
+
+
+/*import java.util.*;
+public class first{
+    public static void main(String[] args) {
+        List<String> names=new ArrayList<>(Arrays.asList("Thakur", "Salil"));
+        Collections.sort(names,(n1,n2)->n1.compareTo(n2));
+        System.out.println("After sorting: "+names);
+    }
+}*/
