@@ -413,3 +413,17 @@ public class first{
         System.out.println("After sorting: "+names);
     }
 }*/
+
+
+
+/*import java.util.*;
+public class first{
+    public static void main(String[] args) {
+        List<String> names=Arrays.asList("Python","Java","React");
+        names.sort((n1, n2)->n2.compareTo(n1));
+        System.out.println("After Sorting "+names);
+    }
+}*/
+
+
+
