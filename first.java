@@ -427,3 +427,43 @@ public class first{
 
 
 
+/*@FunctionalInterface
+interface rev {
+    String reverse(String s);
+}
+public class first{
+    public static void main(String args[]){
+        rev f=(str)->{
+            String result="";
+            for(int i=str.length()-1;i>=0;i--)
+            result+= str.charAt(i);
+            return result;
+        };
+        System.out.println("Reverse: "+f.reverse("HII"));
+    }
+}*/
+
+
+
+/*import java.util.*;
+import java.util.stream.Collectors;
+public class first{
+    public static void main(String[] args) {
+        List<Integer> num= Arrays.asList(9,52,27,43,4);
+        List<Integer> even_num=num.stream().filter(number->number%2==0).collect(Collectors.toList());
+        System.out.println("Even Numbers: "+even_num);
+    }
+}*/
+
+
+
+/*import java.util.*;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
+public class first{
+    public static void main(String[] args) {
+        List<String> strings= Arrays.asList("salil", "thakur");
+        List<String> up_str=strings.stream().map(str->str.toUpperCase()).collect(Collectors.toList());
+        System.out.println("Even Numbers: "+up_str);
+    }
+}*/
