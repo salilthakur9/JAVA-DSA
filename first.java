@@ -487,3 +487,23 @@ public class first{
         System.out.println("Marks of students after grace: "+updatedmarks);
     }
 }*/
+
+
+
+/*class Base{
+    void display(){
+        System.out.println("Base Class");
+    }
+}
+class Derived extends Base{
+    void display(){
+        System.out.println("Derived Class");
+    }
+}
+
+public class first{
+    public static void main(String[] args) {
+        Derived d=new Derived();
+        d.display();
+    }
+}*/
