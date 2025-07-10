@@ -507,3 +507,47 @@ public class first{
         d.display();
     }
 }*/
+
+
+
+/*class Base{
+    void display(){
+        System.out.println("Base Class");
+    }
+}
+class Derived extends Base{
+    @Override
+    void display(){
+        System.out.println("Derived Class");
+    }
+}
+
+public class first{
+    public static void main(String[] args) {
+        Derived d=new Derived();
+        d.display();
+    }
+}*/
+
+
+
+/*class first{
+    @Deprecated
+    int num=10;
+    final int MAX_NUM=10;
+
+    @Deprecated
+    public void myMsg(){
+        System.out.println("This is deprecated method!");
+    }
+
+    public void myMsg2(String msg, String msg2){
+        System.out.println(msg+msg2);
+    }
+
+    public static void main(String args[]){
+        first obj=new first();
+        obj.myMsg();
+        System.out.println(obj.num);
+    }
+}*/
