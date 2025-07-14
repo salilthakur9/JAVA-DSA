@@ -551,3 +551,31 @@ public class first{
         System.out.println(obj.num);
     }
 }*/
+
+
+
+/*import java.util.Date;
+import java.time.LocalDate;
+class first{
+    public static void main(String[] args) {
+        Date d=new Date();
+        System.out.println(d.getDate());
+        LocalDate dt=LocalDate.now();
+        System.out.println(dt);
+    }
+}*/
+
+
+
+/*import java.util.ArrayList;
+public class first{
+    @SuppressWarnings("unchecked")
+    static void elementList(){
+        ArrayList arr= new ArrayList<>();
+        arr.add("Program");
+        System.out.println("ArraysList: "+arr);
+    }
+    public static void main(String[] args) {
+        elementList();
+    }
+}*/
