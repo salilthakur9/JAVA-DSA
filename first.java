@@ -592,3 +592,17 @@ public class first{
 
 
 
+/*import java.util.Optional;
+public class first{
+    public static void main(String[] args) {
+        String[] words=new String[10];
+        words[5]="Salil";
+        Optional<String> checkNull= Optional.ofNullable(words[5]);
+        if(checkNull.isPresent()){
+            String word=words[5].toUpperCase();
+            System.out.print(word);
+        }else{
+            System.out.println("Word is null!");
+        }
+    }
+}*/
