@@ -179,3 +179,41 @@ public class JavaCollection{
         }
     }
 }*/
+
+
+
+/*import java.io.FileReader;
+import java.io.IOException;
+
+public class JavaCollection {
+    public static void main(String[] args) {
+        try {
+            FileReader reader = new FileReader("new.txt");
+            int character;
+
+            while ((character = reader.read()) != -1) {
+                System.out.print((char) character);
+            }
+
+            reader.close();
+        } catch (IOException e) {
+            System.out.println("Error reading file: " + e.getMessage());
+        }
+    }
+}*/
+
+
+
+/*import java.io.File;
+
+public class JavaCollection {
+    public static void main(String[] args) {
+        File file = new File("new.txt");
+
+        if (file.delete()) {
+            System.out.println("File deleted successfully: " + file.getName());
+        } else {
+            System.out.println("Failed to delete the file.");
+        }
+    }
+}*/
