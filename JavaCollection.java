@@ -103,7 +103,7 @@ public class JavaCollection{
 
 
 
-interface Engine{
+/*interface Engine{
     void start();
 }
 class PetrolEngine implements Engine{
@@ -135,5 +135,10 @@ public class JavaCollection{
         Engine petroEngine=new PetrolEngine();
         car petrolCar=new car(petroEngine);
         petrolCar.drive();
+
+        Engine electricEngine= new ElectricEngine();
+
+        car electricar=new car(electricEngine);
+        electricar.drive();
     }
-}
+}*/
