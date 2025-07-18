@@ -622,3 +622,21 @@ public class first{
         }
     }
 }*/
+
+
+
+// if exception caught anywhere the code will be dumped that is written next to it.
+/*public class Exception{
+    public static void main(String args[]){
+        String str=null;
+        int a=10,b=0;
+        try{
+            System.out.println(str.length());
+            System.out.println(a/b);
+        }catch(ArithmeticException e){
+            System.out.println("Arithemetic Exception");
+        }catch(NullPointerException n){
+            System.out.println("Null Pointer Exception !!");
+        }
+    }
+}*/
