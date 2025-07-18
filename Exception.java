@@ -643,7 +643,7 @@ public class first{
 
 
 
-public class Exception{
+/*public class Exception{
     public static void main(String args[]){
         try{
             try{
@@ -657,4 +657,17 @@ public class Exception{
             System.out.println("Divide by 0!");
         }
     }
-}
+}*/
+
+
+
+/*public class Exception{
+    public static void main(String args[]){
+        int age=10;
+        if(age<18){
+            throw new ArithmeticException("Underage");
+        }else{
+            System.out.println("all good");
+        }
+    }
+}*/
