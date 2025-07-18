@@ -100,3 +100,40 @@ public class JavaCollection{
         System.out.println(number);
     }
 }*/
+
+
+
+interface Engine{
+    void start();
+}
+class PetrolEngine implements Engine{
+    @Override
+    public void start(){
+        System.out.println("Petrol Engine Starting!!");
+    }
+}
+class ElectricEngine implements Engine{
+    @Override
+    public void start(){
+        System.out.println("Electric Engine Starting!!");
+    }
+}
+
+class car{
+    private Engine engine;
+    public car(Engine engine){
+        this.engine=engine;
+    }
+    public void drive(){
+        engine.start();
+        System.out.println("Car is driving");
+    }
+}
+
+public class JavaCollection{
+    public static void main(String[] args) {
+        Engine petroEngine=new PetrolEngine();
+        car petrolCar=new car(petroEngine);
+        petrolCar.drive();
+    }
+}

@@ -640,3 +640,21 @@ public class first{
         }
     }
 }*/
+
+
+
+public class Exception{
+    public static void main(String args[]){
+        try{
+            try{
+                int[] arr=new int[5];
+                arr[10]=1000;
+            }catch(ArrayIndexOutOfBoundsException e){
+                System.out.println("Array out of bond!");
+            }
+            int a=10/2;
+        }catch(ArithmeticException e){
+            System.out.println("Divide by 0!");
+        }
+    }
+}
