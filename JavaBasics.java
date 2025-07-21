@@ -3278,3 +3278,69 @@ public class JavaBasics{
         System.out.println(al.contains("name5"));
     }
 }*/
+
+
+/*import java.util.*;
+public class JavaBasics{
+    public static void main(String args[]){
+        ArrayList<String> al=new ArrayList<>();
+        al.add("name4");
+        al.add("name2");
+        al.add("name3");
+        al.add("name1");
+        al.sort(null);
+        System.out.println(al);
+    }
+}*/
+
+
+
+/*import java.util.ArrayList;
+public class JavaBasics {
+    public static void main(String[] args) {
+        ArrayList<Integer> numbers = new ArrayList<>();
+        numbers.add(5);
+        numbers.add(2);
+        numbers.add(8);
+        numbers.add(1);
+        numbers.add(3);
+
+        System.out.println("Before: " + numbers);
+
+        for (int i = 0; i < numbers.size() - 1; i++) {
+            for (int j = i + 1; j < numbers.size(); j++) {
+                if (numbers.get(i) < numbers.get(j)) {
+                    int temp = numbers.get(i);
+                    numbers.set(i, numbers.get(j));
+                    numbers.set(j, temp);
+                }
+            }
+        }System.out.println("After: " + numbers);
+    }
+}*/
+
+
+
+/*import java.util.HashSet;
+import java.util.Scanner;
+import java.util.Set;
+public class JavaBasics{
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        Set<Integer> n = new HashSet<>();
+
+        System.out.println("Enter numbers (type 0 to stop):");
+
+        while (true) {
+            int num = scanner.nextInt();
+            if (num==0)break;
+
+            if (n.contains(num)){
+                System.out.println("No Duplicates i.e. " + num);
+            }else{
+                n.add(num);
+            }
+        }System.out.println("Final: " + n);
+        scanner.close();
+    }
+}*/
