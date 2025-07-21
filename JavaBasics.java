@@ -3251,3 +3251,30 @@ public class JavaBasics{
 }*/
 
 
+/*import java.util.*;
+public class JavaBasics{
+    public static void main(String args[]){
+        ArrayList<String> al=new ArrayList<>();
+        al.add("name1");
+        al.add("name2");
+        al.add("name3");
+        al.add("name4");
+        System.out.println(al);
+        al.remove(1);
+        System.out.println(al);
+    }
+}*/
+
+
+/*import java.util.*;
+public class JavaBasics{
+    public static void main(String args[]){
+        ArrayList<String> al=new ArrayList<>();
+        al.add("name1");
+        al.add("name2");
+        al.add("name3");
+        al.add("name4");
+        System.out.println(al.contains("name1"));
+        System.out.println(al.contains("name5"));
+    }
+}*/
