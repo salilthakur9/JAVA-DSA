@@ -3234,3 +3234,20 @@ public class JavaBasics {
         }
     }
 }*/
+
+
+
+/*import java.util.*;
+public class JavaBasics{
+    public static void main(String args[]){
+        ArrayList<String> al=new ArrayList<>();
+        al.add("name1");
+        al.add("name2");
+        al.add("name3");
+        al.add("name4");
+        System.out.println(al);
+        System.out.println("Size is: "+al.size());
+    }
+}*/
+
+
