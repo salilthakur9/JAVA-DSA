@@ -3344,3 +3344,18 @@ public class JavaBasics{
         scanner.close();
     }
 }*/
+
+
+
+/*import java.util.*;
+public class JavaBasics {
+    public static void main(String[] args) {
+        ArrayList<Integer> list = new ArrayList<>(Arrays.asList(10, 20, 30, 40, 50));
+        Scanner sc = new Scanner(System.in);
+        int x = sc.nextInt(), i=0;
+        for(; i<list.size();i++)
+            if(list.get(i)==x)break;
+
+        System.out.println(i < list.size() ? "Found at index: " + i : "Not found");
+    }
+}*/
