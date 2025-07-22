@@ -217,3 +217,24 @@ public class JavaCollection {
         }
     }
 }*/
+
+
+
+/*import java.util.HashSet;
+public class JavaCollection{
+    public static void main(String[] args) {
+        HashSet<String> hs=new HashSet<>();
+        hs.add("name1");
+        hs.add("name2");
+        hs.add("name2");
+
+        System.out.println(hs);
+        System.out.println();
+        for(String h: hs){
+            System.out.print(h);
+        }
+    }
+}*/
+
+
+
