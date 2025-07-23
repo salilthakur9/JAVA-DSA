@@ -275,3 +275,41 @@ public class JavaCollection{
         t3.start();
     }
 }*/
+
+
+
+/*class counter{
+    private int c=0;
+    public synchronized void inc(){
+        c++;
+    }
+    public synchronized int get(){
+        return c;
+    }
+}
+
+public class JavaCollection{
+    public static void main(String[] args) {
+        counter cnt=new counter();
+        Thread t1=new Thread(()->{
+            for(int i=0;i<100;i++){
+                cnt.inc();
+            }
+        });
+
+        Thread t2=new Thread(()->{
+            for(int i=0;i<1000;i++){
+                cnt.inc();
+            }
+        });
+        t1.start();
+        t2.start();
+
+        try {
+            t1.join();
+            t2.join();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }System.out.println("Counter: "+cnt.get());
+    }
+}*/
