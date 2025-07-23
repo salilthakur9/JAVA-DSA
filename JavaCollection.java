@@ -238,3 +238,40 @@ public class JavaCollection{
 
 
 
+/*class MyThread extends Thread{
+    public void run(){
+        System.out.println("Thread running using Thread class");
+    }
+    public static void main(String[] args) {
+        MyThread t=new MyThread();
+        t.start();
+    }
+}*/
+
+
+
+
+/*public class JavaCollection extends Thread{
+    public void run(){
+        for(int i=1;i<=3;i++){
+            try {
+                Thread.sleep(1000);
+            } catch (Exception e) {
+                System.out.println(e);
+            }System.out.println("Example: "+i);
+        }
+    }
+    public static void main(String[] args) {
+        JavaCollection t1=new JavaCollection();
+        JavaCollection t2=new JavaCollection();
+        JavaCollection t3=new JavaCollection();
+        t1.start();
+        try {
+            t1.join();
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+        t2.start();
+        t3.start();
+    }
+}*/
