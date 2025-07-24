@@ -313,3 +313,29 @@ public class JavaCollection{
         }System.out.println("Counter: "+cnt.get());
     }
 }*/
+
+
+
+/*import java.util.ArrayList;
+import java.util.Collection;
+public class JavaCollection{
+    public static void main(String[] args) {
+        ArrayList<Integer> al=new ArrayList<>();
+        al.add(1);
+        al.add(2);
+        al.add(3);
+        al.add(4);
+        System.out.println(al);
+        al.add(1);
+        System.out.println(al);
+        System.out.println(al.size());
+        for(int i=0;i<al.size();i++){
+            System.out.println(al.get(i)+" ");
+        }
+        al.remove(1);
+        System.out.println(al);
+
+        System.out.println(al.contains(2)); 
+        
+    }
+}*/
