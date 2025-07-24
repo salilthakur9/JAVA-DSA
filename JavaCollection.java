@@ -339,3 +339,24 @@ public class JavaCollection{
         
     }
 }*/
+
+
+
+/*import java.util.ArrayList;
+
+public class JavaCollection{
+    public static void main(String[] args) {
+        int arr[]={10,20,30};
+        ArrayList<Integer> al=new ArrayList<>();
+        System.out.println(al);
+        for(int i=0;i<arr.length;i++){
+            al.add(arr[i]);
+        }System.out.println(al);
+
+        for(int i=al.size()-1;i>=0;i--){
+            System.out.println(al.get(i)+" ");
+        }
+    }
+}*/
+
+
