@@ -343,10 +343,9 @@ public class JavaCollection{
 
 
 /*import java.util.ArrayList;
-
 public class JavaCollection{
     public static void main(String[] args) {
-        int arr[]={10,20,30};
+        int arr[]={100,103,105,101,103,105};
         ArrayList<Integer> al=new ArrayList<>();
         System.out.println(al);
         for(int i=0;i<arr.length;i++){
@@ -360,3 +359,20 @@ public class JavaCollection{
 }*/
 
 
+/*import java.util.ArrayList;
+import java.util.LinkedHashSet;
+
+public class JavaCollection {
+    public static void main(String[] args) {
+        int arr[] = {100, 103, 105, 101, 103, 105};
+        ArrayList<Integer> al = new ArrayList<>();
+        for (int i = 0; i < arr.length; i++) {
+            al.add(arr[i]);
+        }
+        
+        System.out.println("Original ArrayList: " + al);
+        LinkedHashSet<Integer> set = new LinkedHashSet<>(al);
+        al = new ArrayList<>(set);
+        System.out.println("After removing duplicates: " + al);
+    }
+}*/
