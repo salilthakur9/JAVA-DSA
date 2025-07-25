@@ -376,3 +376,19 @@ public class JavaCollection {
         System.out.println("After removing duplicates: " + al);
     }
 }*/
+
+
+
+/*import java.util.LinkedHashSet;
+import java.util.Set;
+import java.util.TreeSet;
+
+public class JavaCollection{
+    public static void main(String[] args) {
+        Set<Integer> s=new TreeSet<>();
+        s.add(1);
+        s.add(2);
+        s.add(3);
+        System.out.println(s);
+    }
+}*/
