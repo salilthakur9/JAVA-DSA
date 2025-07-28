@@ -392,3 +392,19 @@ public class JavaCollection{
         System.out.println(s);
     }
 }*/
+
+
+
+/*import java.util.*;
+import java.util.TreeSet;
+public class JavaCollection {
+    public static void main(String[] args){
+        String str = "salilthakur";
+        Set<Character> s = new TreeSet<>();
+        char ch[] = str.toCharArray();
+        for(int i=0;i<ch.length;i++){
+            s.add(ch[i]);
+        }
+         System.out.println(s);
+    }
+}*/
