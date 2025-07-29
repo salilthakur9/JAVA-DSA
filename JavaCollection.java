@@ -470,3 +470,25 @@ public class JavaCollection{
 
 
 
+/*class noteligibleException extends RuntimeException {
+    public noteligibleException(String m) {
+        super(m);
+    }
+}
+
+public class JavaCollection {
+    public static void validate(int marks) throws noteligibleException {
+        if (marks < 34) {
+            throw new noteligibleException("Fail");
+        }
+        System.out.println("Pass");
+    }
+
+    public static void main(String args[]) {
+        try {
+            validate(30);
+        } catch (noteligibleException e) {
+            System.out.println("Exception caught: " + e.getMessage());
+        }
+    }
+}*/
