@@ -492,3 +492,29 @@ public class JavaCollection {
         }
     }
 }*/
+
+
+
+/*class noteligibleException extends RuntimeException{
+    public noteligibleException(String s){
+        super(s);
+    }
+}
+public class JavaCollection{
+    public static void validate(int marks) throws noteligibleException{
+        if(marks<34){
+            throw new noteligibleException("Fail");
+        }System.out.println("Pass");
+    }
+    public static void main(String args[]){
+        try{
+            validate(40);
+            validate(33);
+        }catch(noteligibleException e){
+            System.out.println(e.getMessage());
+        }
+    }
+}*/
+
+
+
