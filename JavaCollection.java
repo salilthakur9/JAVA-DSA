@@ -408,3 +408,43 @@ public class JavaCollection {
          System.out.println(s);
     }
 }*/
+
+
+
+
+/*import java.util.*;
+
+public class JavaCollection {
+    public static void main(String[] args) {
+        String str = "hello world".replaceAll(" ", "");
+        Map<Character, Integer> map = new HashMap<>();
+        for (char ch : str.toCharArray())
+            map.put(ch, map.getOrDefault(ch, 0) + 1);
+        map.forEach((k, v) -> System.out.println(k + "=>" + v));
+    }
+}*/
+
+
+
+/*@FunctionalInterface
+interface Sumofdigits {
+    int sum(int x);
+}
+public class JavaCollection{
+    public static void main(String args[]){
+        Sumofdigits s=(int n)->{
+            int ans=0,a;
+            while(n!=0){
+                a=n%10;
+                ans=ans+a;
+                n=n/10;
+            }return ans;
+        };
+        System.out.println(s.sum(999));
+        System.out.println(s.sum(99));
+        System.out.println(s.sum(9));
+    }
+}*/
+
+
+
