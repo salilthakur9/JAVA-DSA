@@ -448,3 +448,25 @@ public class JavaCollection{
 
 
 
+/*@FunctionalInterface
+interface Vowelcount {
+    int vowel(String str);
+}
+public class JavaCollection{
+    public static void main(String args[]){
+        Vowelcount v=(String s)->{
+            char[] ch=s.toCharArray();
+            int count=0;
+            for(final char c:ch){
+                if(c=='a' || c=='e' || c=='i' || c=='o' ||c=='u'){
+                    count++;
+                }
+            }return count;
+        };
+        System.out.println("Count: "+v.vowel("Salil Thakur"));
+        System.out.println("Count: "+v.vowel("aeiou"));
+    }
+}*/
+
+
+
