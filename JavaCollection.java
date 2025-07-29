@@ -518,3 +518,27 @@ public class JavaCollection{
 
 
 
+/*import java.util.Scanner;
+class VotingIsEligibleException extends RuntimeException{
+    public VotingIsEligibleException(String s){
+        super(s);
+    }
+}
+public class JavaCollection{
+    public static void validate(int age) throws VotingIsEligibleException{
+        if(age<18){
+            throw new VotingIsEligibleException("Not Eligible!!");
+        }System.out.println("Eligible");
+    }
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter the age: ");
+        int a=sc.nextInt();
+        System.out.println();
+        try{
+            validate(a);
+        }catch(VotingIsEligibleException e){
+            System.out.println(e.getMessage());
+        }
+    }
+}*/
