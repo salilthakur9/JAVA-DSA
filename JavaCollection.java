@@ -542,3 +542,28 @@ public class JavaCollection{
         }
     }
 }*/
+
+
+
+/*import java.util.*;
+public class JavaCollection{
+    public static void main(String args[]){
+        Scanner sc= new Scanner(System.in);
+        String str=sc.nextLine().toLowerCase();
+        Map<Character, Integer> map=new HashMap<>();
+        for(char c:str.toCharArray())
+            map.put(c, map.getOrDefault(c, 0)+1);
+        char maxChar=' ';
+        int max=0;
+        for(var e: map.entrySet()){
+
+            if(e.getValue()>max){
+                max=e.getValue();
+                maxChar=e.getKey();
+            }
+        }System.out.println(maxChar+": "+max);
+    }
+}*/
+
+
+
