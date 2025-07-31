@@ -3359,3 +3359,26 @@ public class JavaBasics {
         System.out.println(i < list.size() ? "Found at index: " + i : "Not found");
     }
 }*/
+
+
+
+/*import java.util.*;
+public class JavaBasics{
+    public static void main(String[] args) {
+        List<String> arr=new ArrayList<>();
+        arr.add("xyz");
+        arr.add("abc");
+        arr.add("xyz");
+        arr.add("abc");
+
+        HashMap<String, Integer> freq=new HashMap<>();
+
+        for(String e:arr){
+            freq.put(e, freq.getOrDefault(e,0)+1);
+        }
+
+        for(Map.Entry<String, Integer> entry:freq.entrySet()){
+            System.out.println(entry.getKey()+": "+entry.getValue());
+        }
+    }
+}*/
