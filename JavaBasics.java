@@ -3415,3 +3415,26 @@ class JavaBasics{
         System.out.println(maxele+" appears "+max);
     }
 }*/
+
+
+
+/*import java.util.Stack;
+
+class JavaBasics{
+    public static void main(String args[]){
+        Stack<Integer> s=new Stack<>();
+        s.push(0);
+        s.push(4);
+        s.push(-1);
+        s.push(2);
+
+        int min=s.peek();
+
+        for(int i:s){
+            if(i<min){
+                min=i;
+            }
+        }
+        System.out.println(min);
+    }
+}*/
