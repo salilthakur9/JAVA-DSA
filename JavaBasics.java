@@ -3382,3 +3382,36 @@ public class JavaBasics{
         }
     }
 }*/
+
+
+
+
+/*import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+class JavaBasics{
+    public static void main(String args[]){
+        List<Integer> l=new ArrayList<>();
+        l.add(1);
+        l.add(2);
+        l.add(3);
+        l.add(3);
+
+        HashMap<Integer, Integer> h=new HashMap<>();
+        for(Integer i:l){
+            h.put(i, h.getOrDefault(i,0)+1);
+        }
+
+        int max=0;
+        int maxele=-1;
+        for(Map.Entry<Integer, Integer> entry: h.entrySet()){
+            if(entry.getValue()>max){
+                max=entry.getValue();
+                maxele=entry.getKey();
+            }
+        }
+        System.out.println(maxele+" appears "+max);
+    }
+}*/
