@@ -3465,3 +3465,16 @@ class JavaBasics{
         System.out.println(Arrays.toString(newArr));
     }
 }*/
+
+
+
+/*public class JavaBasics{
+    public static void main(String args[]){
+        int[] arr={1,8,32,128,516};
+
+        for(int a:arr){
+            String s=Integer.toOctalString(a).toLowerCase();
+            System.out.println(s);
+        }
+    }
+}*/
