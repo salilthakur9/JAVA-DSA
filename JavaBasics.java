@@ -3438,3 +3438,30 @@ class JavaBasics{
         System.out.println(min);
     }
 }*/
+
+
+
+
+/*import java.util.Arrays;
+import java.util.HashSet;
+
+class JavaBasics{
+    public static void main(String args[]){
+        int[] arr={1,1,2,2,3,3,4,4,5,5};
+
+        HashSet<Integer> h=new HashSet<>();
+
+        for(int a:arr){
+            h.add(a);
+        }
+
+        int[] newArr=new int[h.size()];
+
+        int i=0;
+        for(int e:h){
+            newArr[i++]=e;
+        }
+
+        System.out.println(Arrays.toString(newArr));
+    }
+}*/
